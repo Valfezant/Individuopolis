@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sr_Pebblington
   m_EditorClassIdentifier: 
   entityName: Pebblington Sr.
-  entitySprite: {fileID: 0}
+  entitySprite: {fileID: 21300000, guid: 5effaa85526c94e4c9a77a71cdabc6e4, type: 3}
   introduction:
   - "Excuse me, kind sir, did you happen to see my son pass through here? I lost
     track of him as we got into the queue, but I\u2019m certain he was just a few

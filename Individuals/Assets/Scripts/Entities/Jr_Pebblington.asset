@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Jr_Pebblington
   m_EditorClassIdentifier: 
   entityName: Pebblington Jr.
-  entitySprite: {fileID: 0}
-  introduction: []
+  entitySprite: {fileID: 21300000, guid: 88f10ce8523158e4ebf11b5a46640a94, type: 3}
+  introduction:
+  - ...
   actionSpeakFeedback:
   - ...
   actionPokeFeedback:

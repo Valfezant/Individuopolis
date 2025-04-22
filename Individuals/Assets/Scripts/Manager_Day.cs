@@ -7,6 +7,11 @@ public class Manager_Day : MonoBehaviour
     [SerializeField] private Entity[] entityQueue;
     [SerializeField] private int entityQueueIndex;
     public Entity currentEntity;
+
+    //Events
+    public delegate void ClickAction();
+    public static event ClickAction onNextInQueue;
+
     
     void Start()
     {
@@ -19,7 +24,14 @@ public class Manager_Day : MonoBehaviour
         //DEBUG
         if (Input.GetKeyDown(KeyCode.X))
         {
-           NextEntityInQueue();
+           if (entityQueueIndex < entityQueue.Length)
+           {
+                NextEntityInQueue();
+           }
+           else
+           {
+                Debug.Log("Queue over");
+           }
         }
     }
 
@@ -28,6 +40,11 @@ public class Manager_Day : MonoBehaviour
         currentEntity = entityQueue[entityQueueIndex];
         entityQueueIndex ++;
         Debug.Log(entityQueueIndex + " " + currentEntity.entityName);
+
+        if (onNextInQueue != null)
+        {
+            onNextInQueue();
+        }
     }
 
     //Remind player of supposed n of objects

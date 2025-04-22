@@ -6,7 +6,7 @@ using TMPro;
 
 public class InteractionActions : MonoBehaviour
 {
-    private Manager_Day dayManager;
+    [SerializeField] private Manager_Day dayManager;
 
     [SerializeField] private TextMeshProUGUI feedbackText;
 
