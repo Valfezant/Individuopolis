@@ -24,26 +24,26 @@ public class Manager_Day : MonoBehaviour
         //DEBUG
         if (Input.GetKeyDown(KeyCode.X))
         {
-           if (entityQueueIndex < entityQueue.Length)
-           {
-                NextEntityInQueue();
-           }
-           else
-           {
-                Debug.Log("Queue over");
-           }
+            NextEntityInQueue();
         }
     }
 
     public void NextEntityInQueue()
     {
-        currentEntity = entityQueue[entityQueueIndex];
-        entityQueueIndex ++;
-        Debug.Log(entityQueueIndex + " " + currentEntity.entityName);
-
-        if (onNextInQueue != null)
+        if (entityQueueIndex < entityQueue.Length)
         {
-            onNextInQueue();
+            currentEntity = entityQueue[entityQueueIndex];
+            entityQueueIndex ++;
+            Debug.Log(entityQueueIndex + " " + currentEntity.entityName);
+
+            if (onNextInQueue != null)
+            {
+                onNextInQueue();
+            }
+        }
+        else
+        {
+            Debug.Log("Queue over");
         }
     }
 

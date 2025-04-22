@@ -8,7 +8,7 @@ public class Displayer : MonoBehaviour
 {
     [SerializeField] private Manager_Day dayManager;
     
-    [SerializeField] private SpriteRenderer spriteRend;
+    [SerializeField] public SpriteRenderer spriteRend;
 
     [SerializeField] private TextMeshProUGUI introDialogueText;
     [SerializeField] private int introDialogueTextIndex;
@@ -25,7 +25,6 @@ public class Displayer : MonoBehaviour
 
     private void DisplayEntity()
     {
-        Debug.Log(dayManager.currentEntity.entitySprite);
         if (dayManager.currentEntity.entitySprite != null)
         {
             
