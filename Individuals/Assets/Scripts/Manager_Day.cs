@@ -16,7 +16,7 @@ public class Manager_Day : MonoBehaviour
     void Start()
     {
         entityQueueIndex = 0;
-        NextEntityInQueue();
+        //NextEntityInQueue();
     }
 
     void Update()
@@ -30,6 +30,8 @@ public class Manager_Day : MonoBehaviour
 
     public void NextEntityInQueue()
     {
+        Debug.Log(entityQueueIndex);
+        
         if (entityQueueIndex < entityQueue.Length)
         {
             currentEntity = entityQueue[entityQueueIndex];

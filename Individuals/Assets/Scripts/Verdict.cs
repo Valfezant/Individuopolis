@@ -6,6 +6,7 @@ public class Verdict : MonoBehaviour
 {
     [SerializeField] private Manager_Day dayManager;
     [SerializeField] private Displayer displayer;
+    [SerializeField] private ScreenShaker screenShaker;
 
     [SerializeField] private HammerAnimator hammerAnimator;
     [SerializeField] private SpriteAnimator spriteAnimator;
@@ -41,6 +42,8 @@ public class Verdict : MonoBehaviour
         {
             audioSource.PlayOneShot(dayManager.currentEntity.killSound, 1f);
         }
+
+        screenShaker.StartShaking();
 
         displayer.spriteRend.sprite = null;
     }
