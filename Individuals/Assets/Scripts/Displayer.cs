@@ -7,6 +7,7 @@ using TMPro;
 public class Displayer : MonoBehaviour
 {
     [SerializeField] private Manager_Day dayManager;
+    [SerializeField] private SpriteAnimator spriteAnimator;
     
     [SerializeField] public SpriteRenderer spriteRend;
 
@@ -27,15 +28,16 @@ public class Displayer : MonoBehaviour
     {
         if (dayManager.currentEntity.entitySprite != null)
         {
-            
+            spriteAnimator.StartEnteringAnimation();
             spriteRend.sprite = dayManager.currentEntity.entitySprite;
+            
         }
 
         introDialogueTextIndex = 0;
-        DisplayEntityIntroText();
+        //DisplayEntityIntroText();
     }
 
-    private void DisplayEntityIntroText()
+    public void DisplayEntityIntroText()
     {
         introDialogueText.text = dayManager.currentEntity.introduction[introDialogueTextIndex];
 

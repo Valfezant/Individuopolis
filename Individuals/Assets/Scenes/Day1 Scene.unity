@@ -2140,6 +2140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verdict: {fileID: 736754808}
+  displayer: {fileID: 736754807}
 --- !u!1 &736754803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,6 +2238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayManager: {fileID: 736754804}
+  spriteAnimator: {fileID: 709195122}
   spriteRend: {fileID: 709195119}
   introDialogueText: {fileID: 294051640}
   introDialogueTextIndex: 0
@@ -4209,7 +4211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1694623781
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ using UnityEngine;
 public class SpriteAnimator : MonoBehaviour
 {
     [SerializeField] private Verdict verdict;
+    [SerializeField] private Displayer displayer;
+
     private Animator animator;
 
     void Start()
@@ -12,6 +14,7 @@ public class SpriteAnimator : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    //Exit
     public void StartLeavingAnimation()
     {
         animator.SetBool("isLeaving", true);
@@ -20,11 +23,34 @@ public class SpriteAnimator : MonoBehaviour
     public void HasLeftAnimation()
     {
         verdict.HasLeft();
+        animator.SetBool("isLeaving", false);
     }
 
     public void EndLeavingAnimation()
     {
-        animator.SetBool("isLeaving", false);
         verdict.Proceed();
+    }
+
+    //Enter
+    public void StartEnteringAnimation()
+    {
+        animator.SetBool("isEntering", true);
+    }
+
+    public void HasEnteredAnimation()
+    {
+        displayer.DisplayEntityIntroText();
+        animator.SetBool("isEntering", false);
+    }
+
+    //Crushing
+    public void StartCrushingAnimation()
+    {
+        animator.SetBool("isCrushed", true);
+    }
+    
+    public void EndCrushingAnimation()
+    {
+        animator.SetBool("isCrushed", false);
     }
 }

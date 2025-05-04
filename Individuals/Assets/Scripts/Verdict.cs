@@ -20,8 +20,6 @@ public class Verdict : MonoBehaviour
         spriteAnimator.StartLeavingAnimation();
 
         Debug.Log("Person.");
-        //displayer.spriteRend.sprite = null;
-        //dayManager.NextEntityInQueue();
     }
 
     public void HasLeft()
@@ -47,7 +45,8 @@ public class Verdict : MonoBehaviour
 
         screenShaker.StartShaking();
 
-        displayer.spriteRend.sprite = null;
+        //displayer.spriteRend.sprite = null;
+        spriteAnimator.StartCrushingAnimation();
         displayer.introDialogueText.text = "";
     }
 
