@@ -6,6 +6,7 @@ public class Verdict : MonoBehaviour
 {
     [SerializeField] private Manager_Day dayManager;
     [SerializeField] private Displayer displayer;
+    [SerializeField] private InteractionActions interactions;
     [SerializeField] private ScreenShaker screenShaker;
 
     [SerializeField] private HammerAnimator hammerAnimator;
@@ -26,6 +27,7 @@ public class Verdict : MonoBehaviour
     public void HasLeft()
     {
         displayer.spriteRend.sprite = null;
+        displayer.introDialogueText.text = "";
     }
 
     public void DestroyVerdict()
@@ -46,10 +48,12 @@ public class Verdict : MonoBehaviour
         screenShaker.StartShaking();
 
         displayer.spriteRend.sprite = null;
+        displayer.introDialogueText.text = "";
     }
 
     public void Proceed()
     {
         dayManager.NextEntityInQueue();
+        interactions.pokeFeedbackText.text = "";
     }
 }

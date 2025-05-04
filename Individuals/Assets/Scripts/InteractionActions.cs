@@ -9,7 +9,7 @@ public class InteractionActions : MonoBehaviour
     [SerializeField] private Manager_Day dayManager;
 
     [SerializeField] private TextMeshProUGUI speakFeedbackText;
-    [SerializeField] private TextMeshProUGUI pokeFeedbackText;
+    [SerializeField] public TextMeshProUGUI pokeFeedbackText;
     [SerializeField] private int feedbackIndex;
 
     public void SpeakAction()

@@ -988,7 +988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &345593367
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2173,12 +2173,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b378a940cf562d04aa9206638178af53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hudPanel: {fileID: 2099386280}
   entityQueue:
   - {fileID: 11400000, guid: dd1827aa508b66347a3273c177b3ce42, type: 2}
   - {fileID: 11400000, guid: f9b43593e9ae36c4cbcd3a960d2427f4, type: 2}
   - {fileID: 11400000, guid: 1503bc74923dcf349a01a0086f6bc94e, type: 2}
   entityQueueIndex: 0
   currentEntity: {fileID: 0}
+  introPanel: {fileID: 345593366}
+  dayTitleText: {fileID: 1623226204}
+  dayText: {fileID: 479779221}
+  beginButton: {fileID: 920383804}
+  dayTitle: Day 1 - Morning
+  dayIntroduction: 'Good morning, Inspector.
+
+    The projected amount of objects
+    attempting to enter this day is <color=red>2-3</color>.
+
+    Make sure to perform
+    your duty accordingly, and you will be rewarded.'
+  textSpeed: 0.03
 --- !u!4 &736754805
 Transform:
   m_ObjectHideFlags: 0
@@ -2240,6 +2254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayManager: {fileID: 736754804}
   displayer: {fileID: 736754807}
+  interactions: {fileID: 736754806}
   screenShaker: {fileID: 963194229}
   hammerAnimator: {fileID: 392462995}
   spriteAnimator: {fileID: 709195122}
@@ -2899,7 +2914,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 920383807}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736754804}
+        m_TargetAssemblyTypeName: Manager_Day, Assembly-CSharp
+        m_MethodName: StartQueue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &920383807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3244,7 +3271,7 @@ RectTransform:
   m_Father: {fileID: 1991015510}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3909,7 +3936,7 @@ GameObject:
   - component: {fileID: 1623226205}
   - component: {fileID: 1623226204}
   m_Layer: 5
-  m_Name: Day Text (TMP)
+  m_Name: Day Title Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4405,7 +4432,7 @@ RectTransform:
   m_Father: {fileID: 697983812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4732,12 +4759,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2099386281}
   m_Layer: 5
-  m_Name: --Day
+  m_Name: --Day HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2099386281
 RectTransform:
   m_ObjectHideFlags: 0

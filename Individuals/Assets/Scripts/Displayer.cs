@@ -10,7 +10,7 @@ public class Displayer : MonoBehaviour
     
     [SerializeField] public SpriteRenderer spriteRend;
 
-    [SerializeField] private TextMeshProUGUI introDialogueText;
+    [SerializeField] public TextMeshProUGUI introDialogueText;
     [SerializeField] private int introDialogueTextIndex;
     
     void Start()
