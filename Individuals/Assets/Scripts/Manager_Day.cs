@@ -21,21 +21,31 @@ public class Manager_Day : MonoBehaviour
     [SerializeField] private GameObject introPanel;
     [SerializeField] private TextMeshProUGUI dayTitleText;
     [SerializeField] private TextMeshProUGUI dayText;
+
     [SerializeField] private GameObject beginButton;
+    [SerializeField] private GameObject endButton;
+
+    [SerializeField] private float textSpeed;
 
     [SerializeField] private string dayTitle;
     [SerializeField] [TextArea(1, 10)] private string dayIntroduction;
-    [SerializeField] private float textSpeed;
+    
+    [SerializeField] private string dayTitleEnd;
+    [SerializeField] [TextArea(1, 10)] private string dayEnd;
+
     private int textIndex;
 
+    private bool _isDayOver;
 
     
     void Start()
     {
-        introPanel.SetActive(true);
+        _isDayOver = false;
         dayText.text = "";
         dayText.text = "";
         beginButton.SetActive(false);
+        endButton.SetActive(false);
+        introPanel.SetActive(true);
 
         textIndex = 0;
         StartCoroutine(TypeText(dayTitleText, dayTitle));
@@ -65,14 +75,39 @@ public class Manager_Day : MonoBehaviour
 
     private void NextText()
     {
-        if (textIndex == 1)
+        if (textIndex == 1 && !_isDayOver)
         {
             StartCoroutine(TypeText(dayText, dayIntroduction));
         }
-        if (textIndex > 1)
+        else if (textIndex > 1 && !_isDayOver)
         {
             beginButton.SetActive(true);
         }
+
+        else if (textIndex == 1 && _isDayOver)
+        {
+            StartCoroutine(TypeText(dayText, dayEnd));
+        }
+        else if (textIndex > 1 && _isDayOver)
+        {
+            endButton.SetActive(true);
+        }
+    }
+
+    private void EndDay()
+    {
+        _isDayOver = true;
+
+        hudPanel.SetActive(false);
+        
+        dayText.text = "";
+        dayText.text = "";
+        beginButton.SetActive(false);
+        endButton.SetActive(false);
+        introPanel.SetActive(true);
+
+        textIndex = 0;
+        StartCoroutine(TypeText(dayTitleText, dayTitleEnd));
     }
 
     public void StartQueue()
@@ -80,16 +115,6 @@ public class Manager_Day : MonoBehaviour
         introPanel.SetActive(false);
         hudPanel.SetActive(true);
         NextEntityInQueue();
-    }
-
-    void Update()
-    {
-        
-        //DEBUG
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            NextEntityInQueue();
-        }
     }
 
     public void NextEntityInQueue()
@@ -110,9 +135,19 @@ public class Manager_Day : MonoBehaviour
         else
         {
             Debug.Log("Queue over");
+            EndDay();
         }
     }
 
+    void Update()
+    {
+        
+        //DEBUG
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            NextEntityInQueue();
+        }
+    }
 
 
 
