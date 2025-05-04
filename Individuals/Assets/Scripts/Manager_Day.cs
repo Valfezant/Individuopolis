@@ -10,14 +10,14 @@ public class Manager_Day : MonoBehaviour
     [SerializeField] private GameObject hudPanel;
     [SerializeField] private Entity[] entityQueue;
     [SerializeField] private int entityQueueIndex;
-    public Entity currentEntity;
+    public Entity currentEntity; 
 
     //Events
     public delegate void ClickAction();
     public static event ClickAction onNextInQueue;
 
     //Introduction text
-    [Header("Introduction Manager")]
+    [Header("Text Manager")]
     [SerializeField] private GameObject introPanel;
     [SerializeField] private TextMeshProUGUI dayTitleText;
     [SerializeField] private TextMeshProUGUI dayText;
@@ -34,17 +34,19 @@ public class Manager_Day : MonoBehaviour
     [SerializeField] [TextArea(1, 10)] private string dayEnd;
 
     private int textIndex;
-
     private bool _isDayOver;
 
     
     void Start()
     {
         _isDayOver = false;
+
+        hudPanel.SetActive(false);      
         dayText.text = "";
         dayText.text = "";
         beginButton.SetActive(false);
         endButton.SetActive(false);
+
         introPanel.SetActive(true);
 
         textIndex = 0;

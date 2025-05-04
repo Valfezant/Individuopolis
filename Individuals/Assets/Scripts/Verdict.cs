@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Verdict : MonoBehaviour
 {
@@ -9,17 +10,21 @@ public class Verdict : MonoBehaviour
     [SerializeField] private InteractionActions interactions;
     [SerializeField] private ScreenShaker screenShaker;
 
+    [Header("Animators")]
     [SerializeField] private HammerAnimator hammerAnimator;
     [SerializeField] private SpriteAnimator spriteAnimator;
 
     [SerializeField] private AudioSource audioSource;
 
+    [Header("Harvest")]
+    [SerializeField] private Slider harvestSlider;
+    [SerializeField] public int harvestCounter;
+
+    //PERSON
     public void SpareVerdict()
     {
         //Play animation
         spriteAnimator.StartLeavingAnimation();
-
-        Debug.Log("Person.");
     }
 
     public void HasLeft()
@@ -28,12 +33,11 @@ public class Verdict : MonoBehaviour
         displayer.introDialogueText.text = "";
     }
 
+    //OBJECT
     public void DestroyVerdict()
     {
         //Play animation
         hammerAnimator.StartHitAnimation();
-
-        Debug.Log("OBJECT.");
     }
 
     public void HammerHit()
@@ -50,8 +54,12 @@ public class Verdict : MonoBehaviour
         displayer.introDialogueText.text = "";
     }
 
+    //GENERAL
     public void Proceed()
     {
+        harvestCounter ++;
+        harvestSlider.value = harvestCounter;
+        
         dayManager.NextEntityInQueue();
         interactions.pokeFeedbackText.text = "";
     }

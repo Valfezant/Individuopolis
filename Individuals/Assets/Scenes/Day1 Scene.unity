@@ -789,7 +789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &345593367
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 982731496}
   m_Direction: 2
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 3
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1686,7 +1686,7 @@ GameObject:
   - component: {fileID: 736754808}
   - component: {fileID: 736754809}
   m_Layer: 0
-  m_Name: Day Manager
+  m_Name: -Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1798,6 +1798,8 @@ MonoBehaviour:
   hammerAnimator: {fileID: 392462995}
   spriteAnimator: {fileID: 709195122}
   audioSource: {fileID: 736754809}
+  harvestSlider: {fileID: 472206157}
+  harvestCounter: 0
 --- !u!82 &736754809
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2810,7 +2812,7 @@ RectTransform:
   m_Father: {fileID: 1991015510}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3958,7 +3960,7 @@ RectTransform:
   m_Father: {fileID: 697983812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4424,7 +4426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2099386281
 RectTransform:
   m_ObjectHideFlags: 0
