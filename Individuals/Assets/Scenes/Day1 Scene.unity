@@ -1684,6 +1684,7 @@ GameObject:
   - component: {fileID: 736754807}
   - component: {fileID: 736754806}
   - component: {fileID: 736754808}
+  - component: {fileID: 736754810}
   - component: {fileID: 736754809}
   m_Layer: 0
   m_Name: -Manager
@@ -1706,10 +1707,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hudPanel: {fileID: 2099386280}
   entityQueue:
+  - {fileID: 11400000, guid: 1ec9c3a3142aaf74bb77ff8d46b3c484, type: 2}
+  - {fileID: 11400000, guid: 1503bc74923dcf349a01a0086f6bc94e, type: 2}
   - {fileID: 11400000, guid: dd1827aa508b66347a3273c177b3ce42, type: 2}
   - {fileID: 11400000, guid: f9b43593e9ae36c4cbcd3a960d2427f4, type: 2}
-  - {fileID: 11400000, guid: 1503bc74923dcf349a01a0086f6bc94e, type: 2}
-  entityQueueIndex: 0
   currentEntity: {fileID: 0}
   introPanel: {fileID: 345593366}
   dayTitleText: {fileID: 1623226204}
@@ -1759,9 +1760,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayManager: {fileID: 736754804}
+  textWriter: {fileID: 736754810}
   speakFeedbackText: {fileID: 294051640}
+  speakFeedbackIndex: 0
   pokeFeedbackText: {fileID: 1007196083}
-  feedbackIndex: 0
+  pokeFeedbackIndex: 0
 --- !u!114 &736754807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,6 +1779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayManager: {fileID: 736754804}
   spriteAnimator: {fileID: 709195122}
+  textWriter: {fileID: 736754810}
   spriteRend: {fileID: 709195119}
   introDialogueText: {fileID: 294051640}
   introDialogueTextIndex: 0
@@ -1896,6 +1900,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &736754810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736754803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae762fe3c6534499136d5b578253cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 736754809}
+  _isActive: 0
 --- !u!1 &781841068
 GameObject:
   m_ObjectHideFlags: 0

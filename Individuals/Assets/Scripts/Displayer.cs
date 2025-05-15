@@ -8,6 +8,7 @@ public class Displayer : MonoBehaviour
 {
     [SerializeField] private Manager_Day dayManager;
     [SerializeField] private SpriteAnimator spriteAnimator;
+    [SerializeField] private TextWriter textWriter;
     
     [SerializeField] public SpriteRenderer spriteRend;
 
@@ -30,7 +31,6 @@ public class Displayer : MonoBehaviour
         {
             spriteAnimator.StartEnteringAnimation();
             spriteRend.sprite = dayManager.currentEntity.entitySprite;
-            
         }
 
         introDialogueTextIndex = 0;
@@ -39,14 +39,10 @@ public class Displayer : MonoBehaviour
 
     public void DisplayEntityIntroText()
     {
-        introDialogueText.text = dayManager.currentEntity.introduction[introDialogueTextIndex];
-
-        //Not working?
-        /*if (dayManager.currentEntity.introduction.Length > 1)
-        {
-            introDialogueTextIndex ++;
-
-            DisplayEntityIntroText();
-        }*/
+        //introDialogueText.text = dayManager.currentEntity.introduction[introDialogueTextIndex];
+        
+        textWriter._isActive = true;
+        introDialogueText.text = "";
+        StartCoroutine(textWriter.TypeText(introDialogueText, dayManager.currentEntity.introduction[introDialogueTextIndex], dayManager.currentEntity.entityTextSpeed, dayManager.currentEntity.speakSound, dayManager.currentEntity.soundFrequency, dayManager.currentEntity.soundMinPitch, dayManager.currentEntity.soundMaxPitch));
     }
 }

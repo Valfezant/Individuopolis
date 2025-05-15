@@ -9,8 +9,8 @@ public class Manager_Day : MonoBehaviour
     [Header("Queue Manager")]
     [SerializeField] private GameObject hudPanel;
     [SerializeField] private Entity[] entityQueue;
-    [SerializeField] private int entityQueueIndex;
-    public Entity currentEntity; 
+    private int entityQueueIndex;
+    [HideInInspector] public Entity currentEntity; 
 
     //Events
     public delegate void ClickAction();

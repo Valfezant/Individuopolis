@@ -7,12 +7,24 @@ using TMPro;
 public class InteractionActions : MonoBehaviour
 {
     [SerializeField] private Manager_Day dayManager;
+    [SerializeField] private TextWriter textWriter;
 
     [SerializeField] private TextMeshProUGUI speakFeedbackText;
+    [SerializeField] private int speakFeedbackIndex;
     [SerializeField] public TextMeshProUGUI pokeFeedbackText;
-    [SerializeField] private int feedbackIndex;
+    [SerializeField] private int pokeFeedbackIndex;
 
-    public void SpeakAction()
+    void Start()
+    {
+        Manager_Day.onNextInQueue += ClearIndex;
+    }
+
+    void OnDisabled()
+    {
+        Manager_Day.onNextInQueue -= ClearIndex;
+    }
+    
+    /*public void SpeakAction()
     {
         if (feedbackIndex < dayManager.currentEntity.actionSpeakFeedback.Length)
         {
@@ -25,11 +37,39 @@ public class InteractionActions : MonoBehaviour
             speakFeedbackText.text = dayManager.currentEntity.actionSpeakFeedback[feedbackIndex];
             feedbackIndex ++;
         }
+    }*/
+
+    public void SpeakAction()
+    {
+        if (speakFeedbackIndex < dayManager.currentEntity.actionSpeakFeedback.Length)
+        {
+            //speakFeedbackText.text = dayManager.currentEntity.actionSpeakFeedback[speakFeedbackIndex];
+            
+            textWriter._isActive = false;
+            speakFeedbackText.text = "";
+
+            textWriter._isActive = true;
+            StartCoroutine(textWriter.TypeText(speakFeedbackText, dayManager.currentEntity.actionSpeakFeedback[speakFeedbackIndex], dayManager.currentEntity.entityTextSpeed, dayManager.currentEntity.speakSound, dayManager.currentEntity.soundFrequency, dayManager.currentEntity.soundMinPitch, dayManager.currentEntity.soundMaxPitch));
+            speakFeedbackIndex ++;
+        }
+        else
+        {
+            Debug.Log("No more dialogue");
+        }
     }
 
     public void PokeAction()
     {
-        feedbackIndex = 0;
-        pokeFeedbackText.text = dayManager.currentEntity.actionPokeFeedback[feedbackIndex];
+        pokeFeedbackIndex = 0;
+        pokeFeedbackText.text = "";
+        StartCoroutine(textWriter.TypeText(pokeFeedbackText, dayManager.currentEntity.actionPokeFeedback[pokeFeedbackIndex], 0f, dayManager.currentEntity.speakSound, 3, 1f, 1f));
+
+        //pokeFeedbackText.text = dayManager.currentEntity.actionPokeFeedback[pokeFeedbackIndex];
+    }
+
+    private void ClearIndex()
+    {
+        speakFeedbackIndex = 0;
+        pokeFeedbackIndex = 0;
     }
 }
