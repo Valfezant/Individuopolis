@@ -627,7 +627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: test text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -789,7 +789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &345593367
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 982731496}
   m_Direction: 2
   m_MinValue: 0
-  m_MaxValue: 3
+  m_MaxValue: 5
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1132,10 +1132,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Good morning, Inspector.
+  m_text: '$Good morning, Inspector.
 
     The projected amount of objects attempting
-    to enter this day is <color=red>2-3</color>.
+    to enter this day is {estimatedObjectCount}.
 
     Make sure to perform your duty
     accordingly, and you will be rewarded.'
@@ -1706,6 +1706,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hudPanel: {fileID: 2099386280}
+  minObjectEstimate: 2
+  maxObjectEstimate: 3
+  harvestSliderText: {fileID: 1544673943}
+  harvestCounter: 0
   entityQueue:
   - {fileID: 11400000, guid: 1ec9c3a3142aaf74bb77ff8d46b3c484, type: 2}
   - {fileID: 11400000, guid: 1503bc74923dcf349a01a0086f6bc94e, type: 2}
@@ -1717,21 +1721,26 @@ MonoBehaviour:
   dayText: {fileID: 479779221}
   beginButton: {fileID: 920383804}
   endButton: {fileID: 1259018788}
-  textSpeed: 0.03
+  textSpeed: 0.01
   dayTitle: Day 1 - Morning
   dayIntroduction: 'Good morning, Inspector.
 
     The projected amount of objects
-    attempting to enter this day is <color=red>2-3</color>.
+    attempting to enter this day is <color=red>between minEstimate and maxEstimate</color>.
 
-    Make sure to perform
-    your duty accordingly, and you will be rewarded.'
+    Make
+    sure to perform your duty accordingly, and you will be rewarded.'
   dayTitleEnd: Day 1 - Evening
-  dayEnd: "Your performace report for the day indicates you prevented 3 unworthy
-    objects from entering our city.\n\nGood work. The materials you harvested will
-    be essential to ensure Individuopolis' continued existence. \n\nYes, such an
-    admirable performance is deserving of recognition. A reward will be issued for
-    you - if you are capable of consistently proving your worth."
+  dayEnd:
+  - "Your performance report for the day indicates you prevented <color=red>harvestValue</color>
+    unworthy objects from entering our city.\r\n\r\nNot enough\r"
+  - "Your performance report for the day indicates you prevented <color=red>harvestValue</color>
+    unworthy objects from entering our city.\r\n\r\nGood work. The materials you
+    harvested will be essential to ensure Individuopolis' continued existence. \r\n\r\nYes,
+    such an admirable performance is deserving of recognition. A reward will be issued
+    for you - if you are capable of consistently proving your worth.\r"
+  - "Your performance report for the day indicates you prevented <color=red>harvestValue</color>
+    unworthy objects from entering our city.\r\n\r\r\nDamn that's a lot"
 --- !u!4 &736754805
 Transform:
   m_ObjectHideFlags: 0
@@ -1799,11 +1808,11 @@ MonoBehaviour:
   displayer: {fileID: 736754807}
   interactions: {fileID: 736754806}
   screenShaker: {fileID: 963194229}
+  textWriter: {fileID: 736754810}
   hammerAnimator: {fileID: 392462995}
   spriteAnimator: {fileID: 709195122}
   audioSource: {fileID: 736754809}
   harvestSlider: {fileID: 472206157}
-  harvestCounter: 0
 --- !u!82 &736754809
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2929,7 +2938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: test text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3393,7 +3402,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Estimated object number: 2-3'
+  m_text: 'Estimated object number: nnn'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

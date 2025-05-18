@@ -8,6 +8,12 @@ public class Manager_Day : MonoBehaviour
 {
     [Header("Queue Manager")]
     [SerializeField] private GameObject hudPanel;
+
+    [SerializeField] [Range(0, 5)] public int minObjectEstimate;
+    [SerializeField] [Range(0, 5)] public int maxObjectEstimate;
+    [SerializeField] private TextMeshProUGUI harvestSliderText; 
+    public int harvestCounter;
+
     [SerializeField] private Entity[] entityQueue;
     private int entityQueueIndex;
     [HideInInspector] public Entity currentEntity; 
@@ -31,7 +37,7 @@ public class Manager_Day : MonoBehaviour
     [SerializeField] [TextArea(1, 10)] private string dayIntroduction;
     
     [SerializeField] private string dayTitleEnd;
-    [SerializeField] [TextArea(1, 10)] private string dayEnd;
+    [SerializeField] [TextArea(1, 10)] private string[] dayEnd;
 
     private int textIndex;
     private bool _isDayOver;
@@ -40,6 +46,7 @@ public class Manager_Day : MonoBehaviour
     void Start()
     {
         _isDayOver = false;
+        harvestCounter = 0;
 
         hudPanel.SetActive(false);      
         dayText.text = "";
@@ -79,7 +86,8 @@ public class Manager_Day : MonoBehaviour
     {
         if (textIndex == 1 && !_isDayOver)
         {
-            StartCoroutine(TypeText(dayText, dayIntroduction));
+            string dayIntroductionUpdated = dayIntroduction.Replace("minEstimate", minObjectEstimate.ToString()).Replace("maxEstimate", maxObjectEstimate.ToString());
+            StartCoroutine(TypeText(dayText, dayIntroductionUpdated));
         }
         else if (textIndex > 1 && !_isDayOver)
         {
@@ -88,7 +96,24 @@ public class Manager_Day : MonoBehaviour
 
         else if (textIndex == 1 && _isDayOver)
         {
-            StartCoroutine(TypeText(dayText, dayEnd));
+            if (harvestCounter < minObjectEstimate)
+            {
+                //Less than required harvest
+                string dayEndUpdated = dayEnd[0].Replace("harvestValue", harvestCounter.ToString());
+                StartCoroutine(TypeText(dayText, dayEndUpdated));
+            }
+            else if (harvestCounter >= minObjectEstimate)
+            {
+                //Sufficient harvest
+                string dayEndUpdated = dayEnd[1].Replace("harvestValue", harvestCounter.ToString());
+                StartCoroutine(TypeText(dayText, dayEndUpdated));
+            }
+            else if (harvestCounter >= minObjectEstimate)
+            {
+                //Greatly exceeding harvest
+                string dayEndUpdated = dayEnd[2].Replace("harvestValue", harvestCounter.ToString());
+                StartCoroutine(TypeText(dayText, dayEndUpdated));
+            }
         }
         else if (textIndex > 1 && _isDayOver)
         {
@@ -99,10 +124,12 @@ public class Manager_Day : MonoBehaviour
     private void EndDay()
     {
         _isDayOver = true;
+        PlayerPrefs.SetInt("TotalHarvest", harvestCounter);
+        Debug.Log("Total Harvest= " + PlayerPrefs.GetInt("TotalHarvest"));
 
         hudPanel.SetActive(false);
         
-        dayText.text = "";
+        dayTitleText.text = "";
         dayText.text = "";
         beginButton.SetActive(false);
         endButton.SetActive(false);
@@ -116,6 +143,8 @@ public class Manager_Day : MonoBehaviour
     {
         introPanel.SetActive(false);
         hudPanel.SetActive(true);
+        harvestSliderText.text = "Estimated number of objects: " + minObjectEstimate + "-" + maxObjectEstimate;
+
         NextEntityInQueue();
     }
 

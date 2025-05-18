@@ -9,6 +9,7 @@ public class Verdict : MonoBehaviour
     [SerializeField] private Displayer displayer;
     [SerializeField] private InteractionActions interactions;
     [SerializeField] private ScreenShaker screenShaker;
+    [SerializeField] private TextWriter textWriter;
 
     [Header("Animators")]
     [SerializeField] private HammerAnimator hammerAnimator;
@@ -18,11 +19,13 @@ public class Verdict : MonoBehaviour
 
     [Header("Harvest")]
     [SerializeField] private Slider harvestSlider;
-    [SerializeField] public int harvestCounter;
 
     //PERSON
     public void SpareVerdict()
     {
+        textWriter._isActive = false;
+        displayer.introDialogueText.text = "";
+        
         //Play animation
         spriteAnimator.StartLeavingAnimation();
     }
@@ -36,6 +39,9 @@ public class Verdict : MonoBehaviour
     //OBJECT
     public void DestroyVerdict()
     {
+        textWriter._isActive = false;
+        displayer.introDialogueText.text = "";
+        
         //Play animation
         hammerAnimator.StartHitAnimation();
     }
@@ -56,9 +62,9 @@ public class Verdict : MonoBehaviour
 
     //GENERAL
     public void Proceed()
-    {
-        harvestCounter ++;
-        harvestSlider.value = harvestCounter;
+    {        
+        dayManager.harvestCounter ++;
+        harvestSlider.value = dayManager.harvestCounter;
         
         dayManager.NextEntityInQueue();
         interactions.pokeFeedbackText.text = "";
