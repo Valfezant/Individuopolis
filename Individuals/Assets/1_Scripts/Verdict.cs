@@ -11,6 +11,8 @@ public class Verdict : MonoBehaviour
     [SerializeField] private ScreenShaker screenShaker;
     [SerializeField] private TextWriter textWriter;
 
+    private Evaluator evaluator;
+
     [Header("Animators")]
     [SerializeField] private HammerAnimator hammerAnimator;
     [SerializeField] private SpriteAnimator spriteAnimator;
@@ -20,11 +22,21 @@ public class Verdict : MonoBehaviour
     [Header("Harvest")]
     [SerializeField] private Slider harvestSlider;
 
+    private void Awake()
+    {
+        evaluator = GameObject.FindWithTag("Evaluator").GetComponent<Evaluator>();
+    }
+
     //PERSON
     public void SpareVerdict()
     {
         textWriter._isActive = false;
         displayer.introDialogueText.text = "";
+
+        if (evaluator != null)
+        {
+            evaluator.CountEntity(dayManager.currentEntity);
+        }
         
         //Play animation
         spriteAnimator.StartLeavingAnimation();

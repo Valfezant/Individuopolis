@@ -26,8 +26,19 @@ public class Entity : ScriptableObject
 
     public AudioClip speakSound;
 
-    [SerializeField] [Range(1, 20)] public int soundFrequency;
+    [Range(1, 20)] public int soundFrequency;
 
-    [SerializeField] [Range(0, 3)] public float soundMinPitch;
-    [SerializeField] [Range(0, 3)] public float soundMaxPitch;
+    [Range(0, 3)] public float soundMinPitch;
+    [Range(0, 3)] public float soundMaxPitch;
+
+    [Header("Stats")]
+    public bool __makesNoise;
+    public bool __hasEyes;
+    public bool __hasLegs;
+    public bool __isFleshy;
+    public bool __wearsClothes;
+    public bool __looksNice;
+    public bool __isSmall;
+    public bool __feelsCool;
+    public bool __canBeEaten;
 }

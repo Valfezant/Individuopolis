@@ -33,3 +33,12 @@ MonoBehaviour:
   soundFrequency: 3
   soundMinPitch: 0.8
   soundMaxPitch: 1
+  __makesNoise: 1
+  __hasEyes: 1
+  __hasLegs: 1
+  __isFleshy: 0
+  __wearsClothes: 0
+  __looksNice: 1
+  __isSmall: 1
+  __feelsCool: 1
+  __canBeEaten: 0
