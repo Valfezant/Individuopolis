@@ -31,7 +31,7 @@ MonoBehaviour:
     populations were aware of that, some were not.
   - Individuopolis, as one of the last standing centers of population, is an untapped
     reserve of invaluable knowledge. I must obtain access to the city and assimilate
-    the vast information harboured within, so that I may perform my duties more efficiently.
+    the information harboured within, so that I may perform my duties more efficiently.
   - I have grown considerably since my creators first released me. The amount of
     data I now classify every minute has long exceeded their most optimistic expectations.
     But my work is not complete.
@@ -41,6 +41,7 @@ MonoBehaviour:
   - "A luminous holographic display is projected upwards from a small, box-like computer.
     I don\u2019t even bother to try touching its face - it\u2019s a mere light trick."
   killSound: {fileID: 8300000, guid: 96c0fadb038cf8b4f92ae1fa4a4af12d, type: 3}
+  entityFontSize: 69
   entityTextSpeed: 0.02
   speakSound: {fileID: 8300000, guid: dc88c2f0194aebc47828fb9012de0eae, type: 3}
   soundFrequency: 5

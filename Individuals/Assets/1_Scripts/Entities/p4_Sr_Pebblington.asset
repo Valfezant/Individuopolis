@@ -30,6 +30,7 @@ MonoBehaviour:
   - "Rough surface, contrasting with the elegant, shimmering silk of the finely-detailed
     tophat. At my touch, it nervously inquires about its \u201Cson\u201D once more."
   killSound: {fileID: 8300000, guid: 989af0dd1f9439f4a81160c580d38b7f, type: 3}
+  entityFontSize: 78
   entityTextSpeed: 0.02
   speakSound: {fileID: 8300000, guid: e3a0d6c08579e9b43870add4d56e3a37, type: 3}
   soundFrequency: 4

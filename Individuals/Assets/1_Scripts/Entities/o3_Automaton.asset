@@ -15,7 +15,7 @@ MonoBehaviour:
   entityName: Tiny Automaton
   entitySprite: {fileID: 21300000, guid: df4d5223829de404eacd5aecbcfc2a3f, type: 3}
   introduction:
-  - '*Whirring noise*.... Hello'
+  - '*Whirring noise*.... Hello.'
   actionSpeakFeedback:
   - I am at your service.
   - My purpose is to serve you, sir.
@@ -27,6 +27,7 @@ MonoBehaviour:
     to be extremely fragile. It\u2019s probably made of some kind of lightweight
     metal. It regards me with beady eyes as it repeats its questions."
   killSound: {fileID: 8300000, guid: e76f293cde2baf448856d5c6a5f79076, type: 3}
+  entityFontSize: 135
   entityTextSpeed: 0.02
   speakSound: {fileID: 8300000, guid: e3f64f3677f4732468c0c16c57f828e7, type: 3}
   soundFrequency: 3

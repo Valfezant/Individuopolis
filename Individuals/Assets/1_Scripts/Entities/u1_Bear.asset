@@ -27,7 +27,8 @@ MonoBehaviour:
     thoughts might be lying beyond them. I don\u2019t think I really am \u2018the
     inspector\u201D in this interaction.\r"
   killSound: {fileID: 8300000, guid: 47af649c200dd50448751e881bb0a8a1, type: 3}
-  entityTextSpeed: 0
+  entityFontSize: 270
+  entityTextSpeed: 0.06
   speakSound: {fileID: 0}
   soundFrequency: 0
   soundMinPitch: 0

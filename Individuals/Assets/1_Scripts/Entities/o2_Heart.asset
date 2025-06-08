@@ -22,6 +22,7 @@ MonoBehaviour:
   - It squirts specks of blood with every slow, yet steady beat. I grimace as I inch
     my finger towards it - it is warm, but I sense no change in its behaviour.
   killSound: {fileID: 8300000, guid: c08f032368e10de4daac0418f62deee9, type: 3}
+  entityFontSize: 115
   entityTextSpeed: 0.05
   speakSound: {fileID: 8300000, guid: 24c15bdeb45a2a348a8adfab9992b3b4, type: 3}
   soundFrequency: 13

@@ -36,6 +36,7 @@ MonoBehaviour:
     old fabric is thin and worn, stained with paint all over. It smells like paint,
     too.
   killSound: {fileID: 8300000, guid: 33f5b1269ee90dd4aac9c4b05aec00b7, type: 3}
+  entityFontSize: 78
   entityTextSpeed: 0.02
   speakSound: {fileID: 8300000, guid: 9a2b5737ad4898142baaea8c92c6a6d0, type: 3}
   soundFrequency: 13

@@ -43,6 +43,7 @@ public class Displayer : MonoBehaviour
         
         textWriter._isActive = true;
         introDialogueText.text = "";
+        introDialogueText.fontSize = dayManager.currentEntity.entityFontSize;
         StartCoroutine(textWriter.TypeText(introDialogueText, dayManager.currentEntity.introduction[introDialogueTextIndex], dayManager.currentEntity.entityTextSpeed, dayManager.currentEntity.speakSound, dayManager.currentEntity.soundFrequency, dayManager.currentEntity.soundMinPitch, dayManager.currentEntity.soundMaxPitch));
     }
 }

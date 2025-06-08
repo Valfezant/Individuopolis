@@ -24,7 +24,8 @@ MonoBehaviour:
   - Impossibly soft feathers cushioning plump meat. Its eyes now slowly drift towards
     me, but only slightly. For all I know, it was just a coincidence.
   killSound: {fileID: 8300000, guid: 82077f6fdd9fe1349b428764863c23f3, type: 3}
-  entityTextSpeed: 0
+  entityFontSize: 165
+  entityTextSpeed: 0.02
   speakSound: {fileID: 0}
   soundFrequency: 0
   soundMinPitch: 0

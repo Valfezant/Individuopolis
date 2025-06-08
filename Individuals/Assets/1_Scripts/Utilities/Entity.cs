@@ -20,6 +20,8 @@ public class Entity : ScriptableObject
     public AudioClip killSound;
 
     [Header("Text")]
+    public int entityFontSize;
+    
     public float entityTextSpeed;
 
     public AudioClip speakSound;

@@ -24,7 +24,8 @@ MonoBehaviour:
     the two tiny red gemstones functioning as eyes are fixated on me. I nearly expect
     it to jump at me. Judging by its artisanal quality, it\u2019s incredibly antique."
   killSound: {fileID: 8300000, guid: 646c9d69231e6a44abcc4f59180c0586, type: 3}
-  entityTextSpeed: 0
+  entityFontSize: 165
+  entityTextSpeed: 0.03
   speakSound: {fileID: 0}
   soundFrequency: 0
   soundMinPitch: 0

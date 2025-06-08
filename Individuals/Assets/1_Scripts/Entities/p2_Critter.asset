@@ -26,6 +26,7 @@ MonoBehaviour:
   - "It watches my hand move towards it with suspicion, and as I make contact it
     reacts energetically, slapping it away. It shrieks some unintelligible noise.\r"
   killSound: {fileID: 8300000, guid: fec8018ac6ce28c4781646064410ab86, type: 3}
+  entityFontSize: 125
   entityTextSpeed: 0.01
   speakSound: {fileID: 8300000, guid: c3391c1fe7efe254b84ef6f3414f1e55, type: 3}
   soundFrequency: 6

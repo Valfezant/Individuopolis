@@ -25,21 +25,6 @@ public class InteractionActions : MonoBehaviour
     {
         Manager_Day.onNextInQueue -= ClearIndex;
     }
-    
-    /*public void SpeakAction()
-    {
-        if (feedbackIndex < dayManager.currentEntity.actionSpeakFeedback.Length)
-        {
-            speakFeedbackText.text = dayManager.currentEntity.actionSpeakFeedback[feedbackIndex];
-            feedbackIndex ++;
-        }
-        else
-        {
-            feedbackIndex = 0;
-            speakFeedbackText.text = dayManager.currentEntity.actionSpeakFeedback[feedbackIndex];
-            feedbackIndex ++;
-        }
-    }*/
 
     public void SpeakAction()
     {
@@ -50,6 +35,7 @@ public class InteractionActions : MonoBehaviour
             textWriter._isActive = false;
             speakFeedbackText.text = "";
 
+            speakFeedbackText.fontSize = dayManager.currentEntity.entityFontSize;
             textWriter._isActive = true;
             StartCoroutine(textWriter.TypeText(speakFeedbackText, dayManager.currentEntity.actionSpeakFeedback[speakFeedbackIndex], dayManager.currentEntity.entityTextSpeed, dayManager.currentEntity.speakSound, dayManager.currentEntity.soundFrequency, dayManager.currentEntity.soundMinPitch, dayManager.currentEntity.soundMaxPitch));
             speakFeedbackIndex ++;

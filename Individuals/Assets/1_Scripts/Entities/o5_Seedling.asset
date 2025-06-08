@@ -22,7 +22,8 @@ MonoBehaviour:
   - "It\u2019s so tiny and fragile, yet the stem is firm and erect. It\u2019s cool
     to the touch, fresh, and still smells faintly of dirt."
   killSound: {fileID: 8300000, guid: a1e219d33a258a74d9d171d9e9133f79, type: 3}
-  entityTextSpeed: 0
+  entityFontSize: 130
+  entityTextSpeed: 0.04
   speakSound: {fileID: 0}
   soundFrequency: 0
   soundMinPitch: 0

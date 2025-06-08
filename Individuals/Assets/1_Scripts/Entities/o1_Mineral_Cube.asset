@@ -22,7 +22,8 @@ MonoBehaviour:
   - The surface is cool and feels pleasant under my fingertips. Holding it in my
     hand, it has a nice, slight weight.
   killSound: {fileID: 8300000, guid: 63ee5d3db69723c4983128f003e02a70, type: 3}
-  entityTextSpeed: 0
+  entityFontSize: 130
+  entityTextSpeed: 0.04
   speakSound: {fileID: 0}
   soundFrequency: 0
   soundMinPitch: 0

@@ -49,6 +49,7 @@ public class Manager_End : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.5f);
+        ShowButton();
     }
 
     private void PlayDialogueSound(int letter)
