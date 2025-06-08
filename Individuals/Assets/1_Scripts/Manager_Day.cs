@@ -23,7 +23,7 @@ public class Manager_Day : MonoBehaviour
     public static event ClickAction onNextInQueue;
 
     //Introduction text
-    [Header("Text Manager")]
+    [Header("Panels")]
     [SerializeField] private GameObject introPanel;
     [SerializeField] private TextMeshProUGUI dayTitleText;
     [SerializeField] private TextMeshProUGUI dayText;
@@ -31,10 +31,14 @@ public class Manager_Day : MonoBehaviour
     [SerializeField] private GameObject beginButton;
     [SerializeField] private GameObject endButton;
 
+    [Header("Text Manager")]
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private float textSpeed;
+    [SerializeField] private AudioClip textSound;
+    [SerializeField] [Range(1, 20)] private int audioFreq;
 
     [SerializeField] private string dayTitle;
-    [SerializeField] [TextArea(1, 10)] private string dayIntroduction;
+    [SerializeField] [TextArea(1, 10)] private string[] dayIntroduction;
     
     [SerializeField] private string dayTitleEnd;
     [SerializeField] [TextArea(1, 10)] private string[] dayEnd;
@@ -49,7 +53,7 @@ public class Manager_Day : MonoBehaviour
         harvestCounter = 0;
 
         hudPanel.SetActive(false);      
-        dayText.text = "";
+        dayTitleText.text = "";
         dayText.text = "";
         beginButton.SetActive(false);
         endButton.SetActive(false);
@@ -62,6 +66,7 @@ public class Manager_Day : MonoBehaviour
         entityQueueIndex = 0;
     }
 
+    ///Text typer
     private IEnumerator TypeText(TextMeshProUGUI textArea, string textString)
     {
         textArea.text = "";
@@ -74,6 +79,7 @@ public class Manager_Day : MonoBehaviour
             }
 
             textArea.text += letter;
+            PlayDialogueSound(letter); 
             yield return new WaitForSeconds(textSpeed);
         }
 
@@ -82,11 +88,21 @@ public class Manager_Day : MonoBehaviour
         NextText();
     }
 
+    private void PlayDialogueSound(int letter)
+    {
+        if (letter % audioFreq == 0)
+        {
+            //audioSource.pitch = Random.Range(0., 1);
+            audioSource.PlayOneShot(textSound);            
+        }
+    }
+    ///
+
     private void NextText()
     {
         if (textIndex == 1 && !_isDayOver)
         {
-            string dayIntroductionUpdated = dayIntroduction.Replace("minEstimate", minObjectEstimate.ToString()).Replace("maxEstimate", maxObjectEstimate.ToString());
+            string dayIntroductionUpdated = dayIntroduction[0].Replace("minEstimate", minObjectEstimate.ToString()).Replace("maxEstimate", maxObjectEstimate.ToString());
             StartCoroutine(TypeText(dayText, dayIntroductionUpdated));
         }
         else if (textIndex > 1 && !_isDayOver)
@@ -101,42 +117,26 @@ public class Manager_Day : MonoBehaviour
                 //Less than required harvest
                 string dayEndUpdated = dayEnd[0].Replace("harvestValue", harvestCounter.ToString());
                 StartCoroutine(TypeText(dayText, dayEndUpdated));
+                PlayerPrefs.SetInt("EndingInt", 0);
             }
             else if (harvestCounter >= minObjectEstimate)
             {
                 //Sufficient harvest
                 string dayEndUpdated = dayEnd[1].Replace("harvestValue", harvestCounter.ToString());
                 StartCoroutine(TypeText(dayText, dayEndUpdated));
+                PlayerPrefs.SetInt("EndingInt", 1);
             }
-            else if (harvestCounter >= minObjectEstimate)
+            /*else if (harvestCounter >= maxObjectEstimate)
             {
                 //Greatly exceeding harvest
                 string dayEndUpdated = dayEnd[2].Replace("harvestValue", harvestCounter.ToString());
                 StartCoroutine(TypeText(dayText, dayEndUpdated));
-            }
+            }*/
         }
         else if (textIndex > 1 && _isDayOver)
         {
             endButton.SetActive(true);
         }
-    }
-
-    private void EndDay()
-    {
-        _isDayOver = true;
-        PlayerPrefs.SetInt("TotalHarvest", harvestCounter);
-        Debug.Log("Total Harvest= " + PlayerPrefs.GetInt("TotalHarvest"));
-
-        hudPanel.SetActive(false);
-        
-        dayTitleText.text = "";
-        dayText.text = "";
-        beginButton.SetActive(false);
-        endButton.SetActive(false);
-        introPanel.SetActive(true);
-
-        textIndex = 0;
-        StartCoroutine(TypeText(dayTitleText, dayTitleEnd));
     }
 
     public void StartQueue()
@@ -170,18 +170,23 @@ public class Manager_Day : MonoBehaviour
         }
     }
 
-    void Update()
+    private void EndDay()
     {
+        _isDayOver = true;
+        PlayerPrefs.SetInt("TotalHarvest", harvestCounter);
+        Debug.Log("Total Harvest= " + PlayerPrefs.GetInt("TotalHarvest"));
+
+        hudPanel.SetActive(false);
         
-        //DEBUG
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            NextEntityInQueue();
-        }
+        dayTitleText.text = "";
+        dayText.text = "";
+        beginButton.SetActive(false);
+        endButton.SetActive(false);
+        introPanel.SetActive(true);
+
+        textIndex = 0;
+        StartCoroutine(TypeText(dayTitleText, dayTitleEnd));
     }
-
-
-
 
 
     //Remind player of supposed n of objects

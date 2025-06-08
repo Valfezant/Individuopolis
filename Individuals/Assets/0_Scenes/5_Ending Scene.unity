@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &66593785
 RectTransform:
   m_ObjectHideFlags: 0
@@ -426,6 +426,173 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &355236494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355236496}
+  - component: {fileID: 355236495}
+  - component: {fileID: 355236497}
+  - component: {fileID: 355236498}
+  m_Layer: 0
+  m_Name: -Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &355236495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355236494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7279390ae823de445ad4f1e006cb3697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endText: {fileID: 882372374}
+  continueButton: {fileID: 1953547182}
+  audioSource: {fileID: 355236498}
+  textSpeed: 0.03
+  textSound: {fileID: 8300000, guid: 71a667f287fa5384093ec3602ea13059, type: 3}
+  audioFreq: 2
+  endings:
+  - "You have been unable to prove your identity as a thinking being. Your awareness
+    cannot be determined, and our contract is void.\r\n\r\nYou have been deemed an
+    object. As such, you will now be terminated.\r"
+  - "You have earned your reward. \r\nAs per our contract, your citizenship to Individuopolis
+    has been accepted.\r\n\r\nWelcome to the Land of Individuals, citizen.\r"
+--- !u!4 &355236496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355236494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &355236497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355236494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1607607cc0b5c841b206c964d5ddaa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 0_Title Scene
+--- !u!82 &355236498
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355236494}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &361267149
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +628,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 100, y: -100}
-  m_SizeDelta: {x: 1590.3, y: 248.09998}
+  m_SizeDelta: {x: 1706.471, y: 721.721}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &361267151
 MonoBehaviour:
@@ -483,19 +650,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In a far future, in a far land, the barriers between the species have
-    finally fallen. \nAn excessive exploitation of the planet has, however, brought
-    on a resources crisis, and the subsequent fall of most urban centers.\n\nIndividuopolis
+  m_text: "It has been centuries since the barriers between the species fell. \r\nIt
+    has been decades since the fall of most urban centers, a consequence of the resources
+    crisis brought on by the past excessive exploitation of the planet.\r\n\r\nIndividuopolis
     is the last surviving large city. Individuals of all species undertake long journeys
-    to reach it, seeking guaranteed survival. \n\nBecause, in Individuopolis the
-    individual - that is, every sentient creature - is protected. But maintaining
-    an individual is expensive: Individuopolis will not allow any object to pass
-    through its gates. And it certainly won't miss an opportunity to gather some
-    precious materials.\n\nIt is your job, as the official Inspector, to distinguish
-    between citizens and resources. \n"
+    to reach it, seeking guaranteed survival. \r\n\r\nBecause in Individuopolis,
+    the individual - any sentient creature - is protected. \r\n\nMaterials, however,
+    are still painfully scarce.\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f5107da024c9ee4f9f0ec17251f62f6, type: 2}
-  m_sharedMaterial: {fileID: 4055559345370820827, guid: 4f5107da024c9ee4f9f0ec17251f62f6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 64bb0ed7903a42e49925989dbf1b056c, type: 2}
+  m_sharedMaterial: {fileID: -3820589206460380644, guid: 64bb0ed7903a42e49925989dbf1b056c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -519,21 +683,21 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 40.3
+  m_fontSizeBase: 40.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 10
+  m_lineSpacing: 19.7
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 22
+  m_paragraphSpacing: 23.87
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
@@ -555,7 +719,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -420.7078}
+  m_margin: {x: 0, y: 0, z: 0, w: -0.48080444}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -603,7 +767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -100}
+  m_AnchoredPosition: {x: 100, y: -95.6}
   m_SizeDelta: {x: 1590, y: 250}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &882372374
@@ -626,29 +790,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Greetings, Inspector.
-
-
-    You are here to perform a job of extreme importance.
-
-    You
-    must decide whether the entities that stand before you are honest individuals,
-    rightfully deserving of Individuoplis citizenship, or worthless objects, useful
-    only for the precious resources which they harbour.
-
-
-    To decide you must
-    use your discretion. You can attempt to talk or touch the entities to elicit
-    a response. Once you have investigated, you must place your verdict.
-
-
-    At
-    the start of each day, our informers will give you an estimation of the number
-    of suspected objects that will be attempting to enter. Remember that each object
-    will be converted to resources, ever so elusive -- the city will thrive through
-    your rigorous judgement.
-
-'
+  m_text: "You have earned your reward. \r\n\nAs per our contract, your citizenship
+    to Individuopolis has been accepted.\r\n\r\nWelcome to the Land of Individuals,
+    citizen.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f5107da024c9ee4f9f0ec17251f62f6, type: 2}
   m_sharedMaterial: {fileID: 4055559345370820827, guid: 4f5107da024c9ee4f9f0ec17251f62f6, type: 2}
@@ -675,8 +819,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -686,10 +830,10 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 6.96
-  m_lineSpacing: 10
+  m_wordSpacing: 6.07
+  m_lineSpacing: 21.2
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 22
+  m_paragraphSpacing: 33.3
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
@@ -1008,7 +1152,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Understood
+  m_text: End.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64bb0ed7903a42e49925989dbf1b056c, type: 2}
   m_sharedMaterial: {fileID: -3820589206460380644, guid: 64bb0ed7903a42e49925989dbf1b056c, type: 2}
@@ -1100,7 +1244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1750555392
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1156,11 +1300,11 @@ RectTransform:
   - {fileID: 1090865198}
   m_Father: {fileID: 1750555392}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 110}
-  m_SizeDelta: {x: 1150, y: 345}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -50, y: 50}
+  m_SizeDelta: {x: 790, y: 345}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &1953547184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,7 +1327,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.6392157, g: 0.60784316, b: 0.02745098, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1205,7 +1349,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2118493308}
+      - m_Target: {fileID: 355236497}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -1267,7 +1411,6 @@ GameObject:
   - component: {fileID: 2118493306}
   - component: {fileID: 2118493305}
   - component: {fileID: 2118493304}
-  - component: {fileID: 2118493308}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1358,23 +1501,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2118493308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118493303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1607607cc0b5c841b206c964d5ddaa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: Day1 Scene
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 355236496}
   - {fileID: 963194228}
   - {fileID: 2118493307}
   - {fileID: 342830617}

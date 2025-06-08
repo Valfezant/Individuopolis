@@ -15,9 +15,9 @@ MonoBehaviour:
   entityName: Old Artist
   entitySprite: {fileID: 21300000, guid: 22a9919edd440604ab47788931e0c11b, type: 3}
   introduction:
-  - "Ah, Inspector! Before we start, please listen \u2013 behind me in line is my
-    beloved, my most important work! I beg you, please have some regard for it. It
-    is much more than a simple object, I assure you!"
+  - "Inspector! Before we start, please listen \u2013 behind me in line is my beloved,
+    my most important work! I beg you, please have some regard for it. It is much
+    more than a simple object, I assure you!"
   actionSpeakFeedback:
   - "I am an artist. I\u2019m coming to Individuopolis so that I can continue my
     work safely. I have finished a number of pieces, but this one, the one I\u2019ve

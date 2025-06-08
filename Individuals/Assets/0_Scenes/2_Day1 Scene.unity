@@ -1318,7 +1318,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3f0881fbe3f24e3498bddde1ba17ba5f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa5dfd096c6e61742a7b552d75de9656, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1439,16 +1439,16 @@ MonoBehaviour:
   dayTitleText: {fileID: 1623226204}
   dayText: {fileID: 479779221}
   beginButton: {fileID: 920383804}
-  endButton: {fileID: 1259018788}
-  textSpeed: 0.01
+  endButton: {fileID: 0}
+  audioSource: {fileID: 736754809}
+  textSpeed: 0.03
+  textSound: {fileID: 8300000, guid: 71a667f287fa5384093ec3602ea13059, type: 3}
+  audioFreq: 2
   dayTitle: Day 1 - Morning
-  dayIntroduction: 'Good morning, Inspector.
-
-    The projected amount of objects
-    attempting to enter this day is <color=red>between minEstimate and maxEstimate</color>.
-
-    Make
-    sure to perform your duty accordingly, and you will be rewarded.'
+  dayIntroduction:
+  - "Good morning, Inspector.\r\n\r\nThe projected amount of objects attempting to
+    enter on this day is <color=red>between minEstimate and maxEstimate</color>.\r\n\r\nMake
+    sure to perform your duty accordingly, and you will be rewarded.\r"
   dayTitleEnd: Day 1 - Evening
   dayEnd:
   - "Your performance report for the day indicates you prevented <color=red>harvestValue</color>
@@ -2611,11 +2611,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007196081}
   m_CullTransparentMesh: 1
---- !u!1 &1259018788 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1040412258919832690, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
-  m_PrefabInstance: {fileID: 6839642640657313185}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1460779628
 GameObject:
   m_ObjectHideFlags: 0
@@ -3977,6 +3972,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2028952636616497313, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 950
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028952636616497313, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028952636616497313, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270658823840009643, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270658823840009643, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2492690151681199132, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4004,6 +4019,26 @@ PrefabInstance:
     - target: {fileID: 8801915444083400652, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
       propertyPath: m_fontStyle
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8801915444083400652, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_fontColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8801915444083400652, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8801915444083400652, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8801915444083400652, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8801915444083400652, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9166019695061693283, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
       propertyPath: m_text
@@ -4034,7 +4069,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1040412258919832690, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e74e192cd50b24e8fffae39fc46c72, type: 3}
