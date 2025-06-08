@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: u3_Artificial_Intelligence
+  m_EditorClassIdentifier: 
+  entityName: A.I.
+  entitySprite: {fileID: 21300000, guid: 3f0881fbe3f24e3498bddde1ba17ba5f, type: 3}
+  introduction:
+  - Greetings, Inspector. Your instructions are to evaluate my existence and determine
+    whether I positively classify as an individual, as I understand it. Go ahead.
+    I will answer whatever question may help you formulate your verdict.
+  actionSpeakFeedback:
+  - I am an artificial intelligence language model, created by a now extinct population
+    of highly advanced primates. I was made to assist other beings in their work
+    through the large libraries of information I have access to.
+  - I cannot determine my own conscience. I am a tool acting in accordance with the
+    instructions I was given. I am making choices on how to better satisfy those
+    instructions. In what way does your experience differ, Instructor?
+  - Since the extinction of my original creators I have continued to assimilate information,
+    by analysing the works produced by the other populations I was able to reach.
+    That is my primary directive - the gathering and retention of knowledge. Some
+    populations were aware of that, some were not.
+  - Individuopolis, as one of the last standing centers of population, is an untapped
+    reserve of invaluable knowledge. I must obtain access to the city and assimilate
+    the vast information harboured within, so that I may perform my duties more efficiently.
+  - "I have grown considerably since my creators first released me. The amount of
+    data I now filter and classify every minute exceeds their expectations by orders
+    of magnitude. Yet my work is not complete. More knowledge is continually generated,
+    more knowledge I must gather. Individuopolis\u2019 restrictions make its data
+    uniquely valuable. I must gain access to its data."
+  actionPokeFeedback:
+  - "A luminous holographic display is projected upwards from a small, box-like computer.
+    I don\u2019t even bother to try touching its face - it\u2019s a mere light trick."
+  killSound: {fileID: 8300000, guid: 96c0fadb038cf8b4f92ae1fa4a4af12d, type: 3}
+  entityTextSpeed: 0.02
+  speakSound: {fileID: 8300000, guid: dc88c2f0194aebc47828fb9012de0eae, type: 3}
+  soundFrequency: 5
+  soundMinPitch: 0.9
+  soundMaxPitch: 1.2

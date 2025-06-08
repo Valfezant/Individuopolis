@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: o3_Automaton
+  m_EditorClassIdentifier: 
+  entityName: Tiny Automaton
+  entitySprite: {fileID: 21300000, guid: df4d5223829de404eacd5aecbcfc2a3f, type: 3}
+  introduction:
+  - '*Whirring noise*.... Hello'
+  actionSpeakFeedback:
+  - I am at your service.
+  - My purpose is to serve you, sir.
+  - How may I assist you?
+  - I am at your service.
+  - How may I assist you?
+  actionPokeFeedback:
+  - "I touch it with the tip of my finger, as lightly as I can manage - it appears
+    to be extremely fragile. It\u2019s probably made of some kind of lightweight
+    metal. It regards me with beady eyes as it repeats its questions."
+  killSound: {fileID: 8300000, guid: e76f293cde2baf448856d5c6a5f79076, type: 3}
+  entityTextSpeed: 0.02
+  speakSound: {fileID: 8300000, guid: e3f64f3677f4732468c0c16c57f828e7, type: 3}
+  soundFrequency: 3
+  soundMinPitch: 0.8
+  soundMaxPitch: 1

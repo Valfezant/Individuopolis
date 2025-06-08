@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: p5_Artist
+  m_EditorClassIdentifier: 
+  entityName: Old Artist
+  entitySprite: {fileID: 21300000, guid: 22a9919edd440604ab47788931e0c11b, type: 3}
+  introduction:
+  - "Ah, Inspector! Before we start, please listen \u2013 behind me in line is my
+    beloved, my most important work! I beg you, please have some regard for it. It
+    is much more than a simple object, I assure you!"
+  actionSpeakFeedback:
+  - "I am an artist. I\u2019m coming to Individuopolis so that I can continue my
+    work safely. I have finished a number of pieces, but this one, the one I\u2019ve
+    taken with me \u2013 I have been working on it for most of my life!"
+  - "It is nearly complete! This time, I\u2019m sure! And in Individuopolis, I will
+    finally be able to share it with the world! \u2026what\u2019s left of it, anyways.\r"
+  - "All the sleepless nights, all the strain on my old wrists, painting and repainting
+    the same strokes\u2026 inching ever closer to Perfection\u2026"
+  - "I had to leave behind everything, except it \u2013 my masterpiece. Now I have
+    nothing but the result of my entire life\u2019s work. But soon, it will all have
+    been worth it\u2026"
+  - "I ask you again, Inspector. Please, respect this old artist\u2019s desires.
+    Respect Beauty!"
+  actionPokeFeedback:
+  - It looks at me perplexed as I inspect its clothing, squirming impatiently. The
+    old fabric is thin and worn, stained with paint all over. It smells like paint,
+    too.
+  killSound: {fileID: 8300000, guid: 33f5b1269ee90dd4aac9c4b05aec00b7, type: 3}
+  entityTextSpeed: 0.02
+  speakSound: {fileID: 8300000, guid: 9a2b5737ad4898142baaea8c92c6a6d0, type: 3}
+  soundFrequency: 13
+  soundMinPitch: 0.9
+  soundMaxPitch: 1

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: u1_Bear
+  m_EditorClassIdentifier: 
+  entityName: Wild Bear
+  entitySprite: {fileID: 21300000, guid: 817ec7b49bfe739408cd6bd1ddc5a668, type: 3}
+  introduction:
+  - ...
+  actionSpeakFeedback:
+  - ...
+  - ...
+  - '*Low growl*'
+  actionPokeFeedback:
+  - "I couldn\u2019t possibly dare to touch this one. It's a terrible thing, big
+    and heavy and covered in thick fur. It stands tall on its hind limbs, studying
+    me with deep, dark, inscrutable eyes. I can\u2019t even begin to understand what
+    thoughts might be lying beyond them. I don\u2019t think I really am \u2018the
+    inspector\u201D in this interaction.\r"
+  killSound: {fileID: 8300000, guid: 47af649c200dd50448751e881bb0a8a1, type: 3}
+  entityTextSpeed: 0
+  speakSound: {fileID: 0}
+  soundFrequency: 0
+  soundMinPitch: 0
+  soundMaxPitch: 0

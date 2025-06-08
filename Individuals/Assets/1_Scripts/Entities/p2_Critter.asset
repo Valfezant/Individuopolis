@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: p2_Critter
+  m_EditorClassIdentifier: 
+  entityName: Critter
+  entitySprite: {fileID: 21300000, guid: 0ffd7cb95aeb8934ab9d83d2e08c0e9b, type: 3}
+  introduction:
+  - Pum whoaxald Pum waxas suppesow te cemo wholo fobelo Pum ceurd kot din.
+  actionSpeakFeedback:
+  - "Proaxaso, rot\u2019s jet waxacho axanupp velo timo."
+  - Pum whaxavo vust te pe din Dictividueperis.
+  - "Yos - eb ceulso Pum\u2019v pit dolsen, haxat orso weurd Pum fo?"
+  - Whoupp.
+  - "Rot\u2019s quich kot en um dit."
+  actionPokeFeedback:
+  - "It watches my hand move towards it with suspicion, and as I make contact it
+    reacts energetically, slapping it away. It shrieks some unintelligible noise.\r"
+  killSound: {fileID: 8300000, guid: fec8018ac6ce28c4781646064410ab86, type: 3}
+  entityTextSpeed: 0.01
+  speakSound: {fileID: 8300000, guid: c3391c1fe7efe254b84ef6f3414f1e55, type: 3}
+  soundFrequency: 6
+  soundMinPitch: 1
+  soundMaxPitch: 1.69

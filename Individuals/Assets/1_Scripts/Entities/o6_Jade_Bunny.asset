@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: o6_Jade_Bunny
+  m_EditorClassIdentifier: 
+  entityName: Jade Bunny
+  entitySprite: {fileID: 21300000, guid: e17de1340ff86a440b9d2611ff89d33b, type: 3}
+  introduction:
+  - ...
+  actionSpeakFeedback:
+  - ...
+  actionPokeFeedback:
+  - "It\u2019s made of a smooth, cold material I\u2019ve never seen before, cloudy
+    and glossy at the same time. Its delicate shapes were rendered expertly, and
+    the two tiny red gemstones functioning as eyes are fixated on me. I nearly expect
+    it to jump at me. Judging by its artisanal quality, it\u2019s incredibly antique."
+  killSound: {fileID: 8300000, guid: 646c9d69231e6a44abcc4f59180c0586, type: 3}
+  entityTextSpeed: 0
+  speakSound: {fileID: 0}
+  soundFrequency: 0
+  soundMinPitch: 0
+  soundMaxPitch: 0

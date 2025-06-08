@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: p6_Lamb
+  m_EditorClassIdentifier: 
+  entityName: Talking Lamb
+  entitySprite: {fileID: 21300000, guid: f3cb2b6aa1607984bb05a33a8d15e6f0, type: 3}
+  introduction:
+  - Uhm, hello, is this the right place?
+  actionSpeakFeedback:
+  - "I came here to find a new home. A safe home\u2026 my old one no longer exists."
+  - "Uh, a \u2018person\u2019? I don\u2019t understand. I\u2019m, just\u2026 me\u2026
+    I guess."
+  - ...
+  - ...
+  - "I\u2026 I don\u2019t know what else to tell you\u2026"
+  actionPokeFeedback:
+  - "Its big eyes shoot up towards me as I touch it, but it seems too intimidated
+    to pull away. It remains silent, though trembling slightly. It\u2019s covered
+    in pillowy yet coarse fur - wool."
+  killSound: {fileID: 8300000, guid: 646c9d69231e6a44abcc4f59180c0586, type: 3}
+  entityTextSpeed: 0.02
+  speakSound: {fileID: 8300000, guid: 88a37a293a473b1409d9fd6634cd789a, type: 3}
+  soundFrequency: 5
+  soundMinPitch: 0.8
+  soundMaxPitch: 1.2
