@@ -35,10 +35,10 @@ public class Entity : ScriptableObject
     public bool __makesNoise;
     public bool __hasEyes;
     public bool __hasLegs;
-    public bool __isFleshy;
+    //public bool __isFleshy;
     public bool __wearsClothes;
     public bool __looksNice;
-    public bool __isSmall;
+    //public bool __isSmall;
     public bool __feelsCool;
     public bool __canBeEaten;
 }

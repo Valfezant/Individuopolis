@@ -8,18 +8,24 @@ public class Evaluator : MonoBehaviour
     public int stat_makesNoise;
     public int stat_hasEyes;
     public int stat_hasLegs;
-    public int stat_isFleshy;
     public int stat_wearsClothes;
     public int stat_looksNice;
-    public int stat_isSmall;
+    //public int stat_isSmall;
     public int stat_feelsCool;
     public int stat_canBeEaten;
-
 
     
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+        
+        stat_makesNoise = 0;
+        stat_hasEyes = 0;
+        stat_hasLegs = 0;
+        stat_wearsClothes = 0;
+        stat_looksNice = 0;
+        stat_feelsCool = 0;
+        stat_canBeEaten = 0;
     }
 
     public void CountEntity(Entity currentEntity)
@@ -39,11 +45,6 @@ public class Evaluator : MonoBehaviour
             stat_hasLegs ++;
         }
 
-        if (currentEntity.__isFleshy)
-        {
-            stat_isFleshy ++;
-        }
-
         if (currentEntity.__wearsClothes)
         {
             stat_wearsClothes ++;
@@ -54,10 +55,10 @@ public class Evaluator : MonoBehaviour
             stat_looksNice ++;
         }
 
-        if (currentEntity.__isSmall)
+        /*if (currentEntity.__isSmall)
         {
             stat_isSmall ++;
-        }
+        }*/
 
         if (currentEntity.__feelsCool)
         {
