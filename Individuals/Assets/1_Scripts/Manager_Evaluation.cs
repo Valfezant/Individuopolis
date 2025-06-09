@@ -23,6 +23,7 @@ public class Manager_Evaluation : MonoBehaviour
     [Header("Stats")]
     [SerializeField] private Color positiveColor;
     [SerializeField] private Color negativeColor;
+    [SerializeField] private AudioClip statsSound;
 
     [SerializeField] private List<int> statsList;
     
@@ -83,7 +84,7 @@ public class Manager_Evaluation : MonoBehaviour
     {
         if (letter % audioFreq == 0)
         {
-            //audioSource.pitch = Random.Range(0., 1);
+            audioSource.pitch = Random.Range(0.2f, 0.25f);
             audioSource.PlayOneShot(textSound);            
         }
     }
@@ -92,7 +93,8 @@ public class Manager_Evaluation : MonoBehaviour
     private void ShowResults()
     {
         resutlsTitle.SetActive(true);
-        audioSource.PlayOneShot(textSound);
+        audioSource.pitch = 1f;
+        audioSource.PlayOneShot(statsSound);
 
         StopAllCoroutines();
         StartCoroutine(PrintResults());

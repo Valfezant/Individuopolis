@@ -1686,8 +1686,8 @@ MonoBehaviour:
   endButton: {fileID: 295793466}
   audioSource: {fileID: 736754809}
   textSpeed: 0.03
-  textSound: {fileID: 8300000, guid: 71a667f287fa5384093ec3602ea13059, type: 3}
-  audioFreq: 2
+  textSound: {fileID: 8300000, guid: 6ce102b8b85bceb4698bc6f9e8752767, type: 3}
+  audioFreq: 3
   dayTitle: Day 1 - Morning
   dayIntroduction:
   - "Good morning, Inspector.\r\n\r\nThe projected amount of objects attempting to
@@ -1737,7 +1737,7 @@ MonoBehaviour:
   speakFeedbackIndex: 0
   pokeFeedbackText: {fileID: 1007196083}
   pokeFeedbackIndex: 0
-  playerSpeakSound: {fileID: 0}
+  playerSpeakSound: {fileID: 8300000, guid: b5c817ce931228f4cb80c37e01eda605, type: 3}
 --- !u!114 &736754807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2746,7 +2746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000013351, y: 0.0000053711}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 3738.3, y: 608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1007196083

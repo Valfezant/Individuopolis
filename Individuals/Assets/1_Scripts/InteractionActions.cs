@@ -50,7 +50,7 @@ public class InteractionActions : MonoBehaviour
     {
         pokeFeedbackIndex = 0;
         pokeFeedbackText.text = "";
-        StartCoroutine(textWriter.TypeText(pokeFeedbackText, dayManager.currentEntity.actionPokeFeedback[pokeFeedbackIndex], 0f, playerSpeakSound, 3, 1f, 1f));
+        StartCoroutine(textWriter.TypeText(pokeFeedbackText, dayManager.currentEntity.actionPokeFeedback[pokeFeedbackIndex], 0.02f, playerSpeakSound, 3, 0.2f, 0.25f));
 
         //pokeFeedbackText.text = dayManager.currentEntity.actionPokeFeedback[pokeFeedbackIndex];
     }

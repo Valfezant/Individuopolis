@@ -461,7 +461,7 @@ MonoBehaviour:
   continueButton: {fileID: 1953547182}
   audioSource: {fileID: 355236498}
   textSpeed: 0.03
-  textSound: {fileID: 8300000, guid: 71a667f287fa5384093ec3602ea13059, type: 3}
+  textSound: {fileID: 8300000, guid: 6ce102b8b85bceb4698bc6f9e8752767, type: 3}
   audioFreq: 2
   endings:
   - "You have been unable to prove your identity as a thinking being. Your awareness

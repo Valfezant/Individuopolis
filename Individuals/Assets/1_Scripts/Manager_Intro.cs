@@ -70,7 +70,7 @@ public class Manager_Intro : MonoBehaviour
     {
         if (letter % audioFreq == 0)
         {
-            //audioSource.pitch = Random.Range(0., 1);
+            audioSource.pitch = Random.Range(0.2f, 0.25f);
             audioSource.PlayOneShot(textSound);            
         }
     }
