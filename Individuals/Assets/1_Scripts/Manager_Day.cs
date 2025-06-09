@@ -45,6 +45,7 @@ public class Manager_Day : MonoBehaviour
 
     private int textIndex;
     private bool _isDayOver;
+    [SerializeField] private bool _isLastDay;
 
     
     void Start()
@@ -112,26 +113,40 @@ public class Manager_Day : MonoBehaviour
 
         else if (textIndex == 1 && _isDayOver)
         {
-            if (harvestCounter < minObjectEstimate)
+            if (_isLastDay)
             {
-                //Less than required harvest
-                string dayEndUpdated = dayEnd[0].Replace("harvestValue", harvestCounter.ToString());
-                StartCoroutine(TypeText(dayText, dayEndUpdated));
-                PlayerPrefs.SetInt("EndingInt", 0);
+                if (PlayerPrefs.GetInt("TotalHarvest") > 4)
+                {
+                    //LAST DAY -- TOTAL POSITIVE
+                    string dayEndUpdated = dayEnd[1].Replace("harvestValue", harvestCounter.ToString());
+                    StartCoroutine(TypeText(dayText, dayEndUpdated));
+                    PlayerPrefs.SetInt("EndingInt", 1);
+                }
+                else if (PlayerPrefs.GetInt("TotalHarvest") <= 4)
+                {
+                    //LAST DAY -- TOTAL NEGATIVE
+                    string dayEndUpdated = dayEnd[0].Replace("harvestValue", harvestCounter.ToString());
+                    StartCoroutine(TypeText(dayText, dayEndUpdated));
+                    PlayerPrefs.SetInt("EndingInt", 0);
+                }
             }
-            else if (harvestCounter >= minObjectEstimate)
+            else 
             {
-                //Sufficient harvest
-                string dayEndUpdated = dayEnd[1].Replace("harvestValue", harvestCounter.ToString());
-                StartCoroutine(TypeText(dayText, dayEndUpdated));
-                PlayerPrefs.SetInt("EndingInt", 1);
+                if (harvestCounter < minObjectEstimate)
+                {
+                    //Less than required harvest (DAILY)
+                    string dayEndUpdated = dayEnd[0].Replace("harvestValue", harvestCounter.ToString());
+                    StartCoroutine(TypeText(dayText, dayEndUpdated));
+                    //PlayerPrefs.SetInt("EndingInt", 0);
+                }
+                else if (harvestCounter >= minObjectEstimate)
+                {
+                    //Sufficient harvest (DAILY)
+                    string dayEndUpdated = dayEnd[1].Replace("harvestValue", harvestCounter.ToString());
+                    StartCoroutine(TypeText(dayText, dayEndUpdated));
+                    //PlayerPrefs.SetInt("EndingInt", 1);
+                }
             }
-            /*else if (harvestCounter >= maxObjectEstimate)
-            {
-                //Greatly exceeding harvest
-                string dayEndUpdated = dayEnd[2].Replace("harvestValue", harvestCounter.ToString());
-                StartCoroutine(TypeText(dayText, dayEndUpdated));
-            }*/
         }
         else if (textIndex > 1 && _isDayOver)
         {
