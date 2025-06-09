@@ -1658,16 +1658,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hudPanel: {fileID: 2099386280}
-  minObjectEstimate: 1
-  maxObjectEstimate: 2
+  minObjectEstimate: 4
+  maxObjectEstimate: 5
   harvestSliderText: {fileID: 1544673943}
   harvestCounter: 0
   entityQueue:
-  - {fileID: 11400000, guid: d896399277be880428dfd1b48c7ba709, type: 2}
-  - {fileID: 11400000, guid: f9b43593e9ae36c4cbcd3a960d2427f4, type: 2}
-  - {fileID: 11400000, guid: 14f1e42c3410d5742a766d9cba6e1a0d, type: 2}
-  - {fileID: 11400000, guid: 2cf873c3811dd8047b133f629fa32b30, type: 2}
-  - {fileID: 11400000, guid: f058f72f7ad26d747b2ebd6777000aed, type: 2}
+  - {fileID: 11400000, guid: 660ae7e6c8d406f4a8bbd9726bd885da, type: 2}
+  - {fileID: 11400000, guid: 5f57890388792254fb5c69a3473920a5, type: 2}
+  - {fileID: 11400000, guid: d4b3f5882c6ea5446932e102be30a940, type: 2}
+  - {fileID: 11400000, guid: 3050f6903043d2849a11e7a49553e724, type: 2}
+  - {fileID: 11400000, guid: 1ec9c3a3142aaf74bb77ff8d46b3c484, type: 2}
   currentEntity: {fileID: 0}
   introPanel: {fileID: 6756471219616966334}
   dayTitleText: {fileID: 5715254019071611163}
@@ -1678,24 +1678,25 @@ MonoBehaviour:
   textSpeed: 0.03
   textSound: {fileID: 8300000, guid: 6ce102b8b85bceb4698bc6f9e8752767, type: 3}
   audioFreq: 3
-  dayTitle: Day 1 - Morning
+  dayTitle: Day 3 - Morning
   dayIntroduction:
   - "Good morning, Inspector.\r\n\r\nThe projected amount of objects attempting to
     enter on this day is <color=red>between minEstimate and maxEstimate</color>.\r\n\r\nMake
     sure to perform your duty accordingly, and you will be rewarded.\r"
-  dayTitleEnd: Day 1 - Evening
+  dayTitleEnd: Day 3 - Evening
   dayEnd:
   - "Your performance report for the day indicates you prevented <color=red>harvestValue</color>
     unworthy objects from entering our city.\r\n\r\nThis number is inferior to the
     given estimation. There is no doubt that some undeserving object is now wasting
-    the precious resources of our glorious haven.\n\n\rYour performance is unsatisfactory.
-    You won\u2019t be granted your reward until you rectify your behaviour."
+    the precious resources of our glorious haven.\r\n\r\nYour performance has been
+    inadequate. You have failed in your duty.\r\n\r\nLeave your post and proceed
+    down the hall.\r"
   - "Your performance report for the day indicates you prevented <color=red>harvestValue</color>
     unworthy objects from entering our city.\r\n\r\nGood work. The materials you
-    harvested will be essential to ensure Individuopolis' continued existence. \r\n\r\nSuch
-    an admirable performance is deserving of recognition. Your reward will be granted
-    if you are capable of consistently proving your worth.\r"
-  _isLastDay: 0
+    harvested will be essential to ensure Individuopolis' continued existence. \r\n\r\nThrough
+    your exemplary performance you have proved yourself a faithful, respectable protector
+    of Individuopolis.\r\n\r\nPlease proceed through here.\r\r"
+  _isLastDay: 1
 --- !u!4 &736754805
 Transform:
   m_ObjectHideFlags: 0
@@ -4105,7 +4106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1607607cc0b5c841b206c964d5ddaa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 3_Day2 Scene
+  sceneToLoad: 5_Ending Scene
 --- !u!222 &759699515148922320
 CanvasRenderer:
   m_ObjectHideFlags: 0
