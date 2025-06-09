@@ -33,6 +33,9 @@ public class Verdict : MonoBehaviour
         textWriter._isActive = false;
         displayer.introDialogueText.text = "";
 
+        textWriter._isActive = true;
+        StartCoroutine(textWriter.TypeText(displayer.introDialogueText, dayManager.currentEntity.sparedDialogue[0], dayManager.currentEntity.entityTextSpeed / 2, dayManager.currentEntity.speakSound, dayManager.currentEntity.soundFrequency, dayManager.currentEntity.soundMinPitch, dayManager.currentEntity.soundMaxPitch));
+
         if (evaluator != null)
         {
             evaluator.CountEntity(dayManager.currentEntity);
@@ -45,7 +48,8 @@ public class Verdict : MonoBehaviour
     public void HasLeft()
     {
         displayer.spriteRend.sprite = null;
-        displayer.introDialogueText.text = "";
+        //displayer.introDialogueText.text = "";
+        textWriter._isActive = false;
     }
 
     //OBJECT
@@ -70,15 +74,17 @@ public class Verdict : MonoBehaviour
         //displayer.spriteRend.sprite = null;
         spriteAnimator.StartCrushingAnimation();
         displayer.introDialogueText.text = "";
+
+        dayManager.harvestCounter ++;
+        harvestSlider.value = dayManager.harvestCounter;
     }
 
     //GENERAL
     public void Proceed()
     {        
-        dayManager.harvestCounter ++;
-        harvestSlider.value = dayManager.harvestCounter;
-        
+        displayer.introDialogueText.text = "";
         dayManager.NextEntityInQueue();
+        //Invoke("NextEntityInQueue", 1f);
         interactions.pokeFeedbackText.text = "";
     }
 }

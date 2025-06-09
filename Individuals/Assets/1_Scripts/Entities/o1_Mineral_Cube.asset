@@ -21,6 +21,8 @@ MonoBehaviour:
   actionPokeFeedback:
   - The surface is cool and feels pleasant under my fingertips. Holding it in my
     hand, it has a nice, slight weight.
+  sparedDialogue:
+  - ...
   killSound: {fileID: 8300000, guid: 63ee5d3db69723c4983128f003e02a70, type: 3}
   entityFontSize: 130
   entityTextSpeed: 0.04
@@ -31,9 +33,7 @@ MonoBehaviour:
   __makesNoise: 0
   __hasEyes: 0
   __hasLegs: 0
-  __isFleshy: 0
   __wearsClothes: 0
   __looksNice: 1
-  __isSmall: 1
   __feelsCool: 1
   __canBeEaten: 0

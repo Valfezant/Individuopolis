@@ -166,7 +166,7 @@ public class Manager_Day : MonoBehaviour
         else
         {
             Debug.Log("Queue over");
-            EndDay();
+            Invoke("EndDay", 1.5f);
         }
     }
 

@@ -17,6 +17,8 @@ public class Entity : ScriptableObject
     
     [TextArea(1,5)] public string[] actionPokeFeedback;
 
+    [TextArea(1,5)] public string[] sparedDialogue;
+
     public AudioClip killSound;
 
     [Header("Text")]

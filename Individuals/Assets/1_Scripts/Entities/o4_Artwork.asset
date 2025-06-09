@@ -23,6 +23,8 @@ MonoBehaviour:
     the cloth, I can make out each intentional stroke, controlled and precise, resting
     over others in seemingly infinite layers. There\u2019s something deeply alluring
     about it. I dare not touch it, for fear of blemishing its immaculate presence."
+  sparedDialogue:
+  - ...
   killSound: {fileID: 8300000, guid: b3c8f81089135044f81653b14f052ee7, type: 3}
   entityFontSize: 195
   entityTextSpeed: 0.05
@@ -33,9 +35,7 @@ MonoBehaviour:
   __makesNoise: 0
   __hasEyes: 0
   __hasLegs: 1
-  __isFleshy: 0
   __wearsClothes: 1
   __looksNice: 1
-  __isSmall: 0
   __feelsCool: 0
   __canBeEaten: 0

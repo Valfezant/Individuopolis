@@ -26,6 +26,8 @@ MonoBehaviour:
     me with deep, dark, inscrutable eyes. I can\u2019t even begin to understand what
     thoughts might be lying beyond them. I don\u2019t think I really am \u2018the
     inspector\u201D in this interaction.\r"
+  sparedDialogue:
+  - '*Snort*'
   killSound: {fileID: 8300000, guid: 47af649c200dd50448751e881bb0a8a1, type: 3}
   entityFontSize: 270
   entityTextSpeed: 0.06
@@ -36,9 +38,7 @@ MonoBehaviour:
   __makesNoise: 1
   __hasEyes: 1
   __hasLegs: 1
-  __isFleshy: 1
   __wearsClothes: 0
   __looksNice: 0
-  __isSmall: 0
   __feelsCool: 0
   __canBeEaten: 1

@@ -27,6 +27,8 @@ MonoBehaviour:
   - "Its big eyes shoot up towards me as I touch it, but it seems too intimidated
     to pull away. It remains silent, though trembling slightly. It\u2019s covered
     in pillowy yet coarse fur - wool."
+  sparedDialogue:
+  - ...
   killSound: {fileID: 8300000, guid: 646c9d69231e6a44abcc4f59180c0586, type: 3}
   entityFontSize: 103
   entityTextSpeed: 0.02
@@ -37,9 +39,7 @@ MonoBehaviour:
   __makesNoise: 1
   __hasEyes: 1
   __hasLegs: 1
-  __isFleshy: 1
   __wearsClothes: 1
   __looksNice: 1
-  __isSmall: 1
   __feelsCool: 0
   __canBeEaten: 1

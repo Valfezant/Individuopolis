@@ -21,6 +21,8 @@ MonoBehaviour:
   actionPokeFeedback:
   - "The surface is rough - I\u2019m guessing some kind of sedimentary formation.
     It isn\u2019t heavy at all."
+  sparedDialogue:
+  - ...thanks...
   killSound: {fileID: 8300000, guid: 989af0dd1f9439f4a81160c580d38b7f, type: 3}
   entityFontSize: 130
   entityTextSpeed: 0.02
@@ -31,9 +33,7 @@ MonoBehaviour:
   __makesNoise: 0
   __hasEyes: 0
   __hasLegs: 0
-  __isFleshy: 0
   __wearsClothes: 0
   __looksNice: 0
-  __isSmall: 1
   __feelsCool: 1
   __canBeEaten: 0

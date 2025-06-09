@@ -25,6 +25,8 @@ MonoBehaviour:
   actionPokeFeedback:
   - "It watches my hand move towards it with suspicion, and as I make contact it
     reacts energetically, slapping it away. It shrieks some unintelligible noise.\r"
+  sparedDialogue:
+  - Afuk timo. Fyo.
   killSound: {fileID: 8300000, guid: fec8018ac6ce28c4781646064410ab86, type: 3}
   entityFontSize: 125
   entityTextSpeed: 0.01
@@ -35,9 +37,7 @@ MonoBehaviour:
   __makesNoise: 1
   __hasEyes: 1
   __hasLegs: 1
-  __isFleshy: 1
   __wearsClothes: 0
   __looksNice: 0
-  __isSmall: 1
   __feelsCool: 0
   __canBeEaten: 1

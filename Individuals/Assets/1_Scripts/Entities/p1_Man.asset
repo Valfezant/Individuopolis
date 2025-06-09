@@ -26,6 +26,8 @@ MonoBehaviour:
     tie - it\u2019s all surprisingly immacule, considering the environment it must
     have traversed to get here. It looks offended as I prod it for clues and urges
     me to proceed faster."
+  sparedDialogue:
+  - Finally.
   killSound: {fileID: 8300000, guid: afd79e15410e6ea4bbbed0a3c7a17314, type: 3}
   entityFontSize: 115
   entityTextSpeed: 0.03
@@ -36,9 +38,7 @@ MonoBehaviour:
   __makesNoise: 1
   __hasEyes: 1
   __hasLegs: 1
-  __isFleshy: 1
   __wearsClothes: 1
   __looksNice: 0
-  __isSmall: 0
   __feelsCool: 0
   __canBeEaten: 1

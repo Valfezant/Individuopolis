@@ -21,6 +21,8 @@ MonoBehaviour:
   actionPokeFeedback:
   - "It\u2019s so tiny and fragile, yet the stem is firm and erect. It\u2019s cool
     to the touch, fresh, and still smells faintly of dirt."
+  sparedDialogue:
+  - ...
   killSound: {fileID: 8300000, guid: a1e219d33a258a74d9d171d9e9133f79, type: 3}
   entityFontSize: 130
   entityTextSpeed: 0.04
@@ -31,9 +33,7 @@ MonoBehaviour:
   __makesNoise: 0
   __hasEyes: 0
   __hasLegs: 0
-  __isFleshy: 0
   __wearsClothes: 1
   __looksNice: 0
-  __isSmall: 1
   __feelsCool: 1
   __canBeEaten: 1

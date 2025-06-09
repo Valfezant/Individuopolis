@@ -23,6 +23,8 @@ MonoBehaviour:
     and glossy at the same time. Its delicate shapes were rendered expertly, and
     the two tiny red gemstones functioning as eyes are fixated on me. I nearly expect
     it to jump at me. Judging by its artisanal quality, it\u2019s incredibly antique."
+  sparedDialogue:
+  - ...
   killSound: {fileID: 8300000, guid: 646c9d69231e6a44abcc4f59180c0586, type: 3}
   entityFontSize: 165
   entityTextSpeed: 0.03
@@ -33,9 +35,7 @@ MonoBehaviour:
   __makesNoise: 0
   __hasEyes: 1
   __hasLegs: 1
-  __isFleshy: 0
   __wearsClothes: 0
   __looksNice: 1
-  __isSmall: 1
   __feelsCool: 1
   __canBeEaten: 0

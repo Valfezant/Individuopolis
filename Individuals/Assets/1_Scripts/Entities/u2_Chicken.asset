@@ -23,6 +23,8 @@ MonoBehaviour:
   actionPokeFeedback:
   - Impossibly soft feathers cushioning plump meat. Its eyes now slowly drift towards
     me, but only slightly. For all I know, it was just a coincidence.
+  sparedDialogue:
+  - '*Cluck*'
   killSound: {fileID: 8300000, guid: 82077f6fdd9fe1349b428764863c23f3, type: 3}
   entityFontSize: 165
   entityTextSpeed: 0.02
@@ -33,9 +35,7 @@ MonoBehaviour:
   __makesNoise: 0
   __hasEyes: 1
   __hasLegs: 1
-  __isFleshy: 1
   __wearsClothes: 0
   __looksNice: 0
-  __isSmall: 1
   __feelsCool: 0
   __canBeEaten: 1

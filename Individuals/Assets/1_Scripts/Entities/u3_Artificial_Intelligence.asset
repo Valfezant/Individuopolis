@@ -40,6 +40,8 @@ MonoBehaviour:
   actionPokeFeedback:
   - "A luminous holographic display is projected upwards from a small, box-like computer.
     I don\u2019t even bother to try touching its face - it\u2019s a mere light trick."
+  sparedDialogue:
+  - Through your choice we shall soon enter a new age of information.
   killSound: {fileID: 8300000, guid: 96c0fadb038cf8b4f92ae1fa4a4af12d, type: 3}
   entityFontSize: 69
   entityTextSpeed: 0.02
@@ -50,9 +52,7 @@ MonoBehaviour:
   __makesNoise: 1
   __hasEyes: 1
   __hasLegs: 0
-  __isFleshy: 0
   __wearsClothes: 0
   __looksNice: 0
-  __isSmall: 0
   __feelsCool: 1
   __canBeEaten: 0

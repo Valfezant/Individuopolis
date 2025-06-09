@@ -26,6 +26,8 @@ MonoBehaviour:
   - "I touch it with the tip of my finger, as lightly as I can manage - it appears
     to be extremely fragile. It\u2019s probably made of some kind of lightweight
     metal. It regards me with beady eyes as it repeats its questions."
+  sparedDialogue:
+  - Goodbye, sir.
   killSound: {fileID: 8300000, guid: e76f293cde2baf448856d5c6a5f79076, type: 3}
   entityFontSize: 135
   entityTextSpeed: 0.02
@@ -36,9 +38,7 @@ MonoBehaviour:
   __makesNoise: 1
   __hasEyes: 1
   __hasLegs: 1
-  __isFleshy: 0
   __wearsClothes: 0
   __looksNice: 1
-  __isSmall: 1
   __feelsCool: 1
   __canBeEaten: 0
