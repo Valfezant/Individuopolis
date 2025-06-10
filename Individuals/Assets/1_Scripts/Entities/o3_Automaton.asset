@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: o3_Automaton
   m_EditorClassIdentifier: 
   entityName: Tiny Automaton
-  entitySprite: {fileID: 21300000, guid: df4d5223829de404eacd5aecbcfc2a3f, type: 3}
+  entitySprite: {fileID: 21300000, guid: 5217e9886ae2b5e4da2a38b1d12f2657, type: 3}
   introduction:
   - '*Whirring noise*.... Hello.'
   actionSpeakFeedback:

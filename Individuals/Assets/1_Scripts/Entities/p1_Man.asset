@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: p1_Man
   m_EditorClassIdentifier: 
   entityName: Man
-  entitySprite: {fileID: 21300000, guid: 3ec89bee82ada2c47bb2479cb996c112, type: 3}
+  entitySprite: {fileID: 21300000, guid: 376ef3340112959448fd3d5b5d3be740, type: 3}
   introduction:
   - "Mornin\u2019."
   actionSpeakFeedback:

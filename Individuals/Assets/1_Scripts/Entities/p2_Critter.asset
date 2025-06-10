@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: p2_Critter
   m_EditorClassIdentifier: 
   entityName: Critter
-  entitySprite: {fileID: 21300000, guid: 0ffd7cb95aeb8934ab9d83d2e08c0e9b, type: 3}
+  entitySprite: {fileID: 21300000, guid: 6ad63f68894372b43a121cad41362fc8, type: 3}
   introduction:
   - Pum whoaxald Pum waxas suppesow te cemo wholo fobelo Pum ceurd kot din.
   actionSpeakFeedback:

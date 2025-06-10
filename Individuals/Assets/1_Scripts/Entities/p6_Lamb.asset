@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: p6_Lamb
   m_EditorClassIdentifier: 
   entityName: Talking Lamb
-  entitySprite: {fileID: 21300000, guid: f3cb2b6aa1607984bb05a33a8d15e6f0, type: 3}
+  entitySprite: {fileID: 21300000, guid: 7204625b34f9bc8498f2b7d167699b59, type: 3}
   introduction:
   - Uhm, hello, is this the right place?
   actionSpeakFeedback:

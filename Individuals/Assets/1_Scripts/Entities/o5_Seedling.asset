@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: o5_Seedling
   m_EditorClassIdentifier: 
   entityName: Seedling
-  entitySprite: {fileID: 21300000, guid: 8bfd0e06f17eacd40b08a4ee4c2fea52, type: 3}
+  entitySprite: {fileID: 21300000, guid: a197015f7987e4349960437f044c39d1, type: 3}
   introduction:
   - ...
   actionSpeakFeedback:

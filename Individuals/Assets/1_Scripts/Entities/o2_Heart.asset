@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: o2_Heart
   m_EditorClassIdentifier: 
   entityName: Lone Heart
-  entitySprite: {fileID: 21300000, guid: 7406f6c471b4e2048adedd0375a53205, type: 3}
+  entitySprite: {fileID: 21300000, guid: 130ffada7b5bdb7438bf1180d66144b9, type: 3}
   introduction:
   - '*Thump*.... *thump*...'
   actionSpeakFeedback:

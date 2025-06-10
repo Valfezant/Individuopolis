@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: o1_Mineral_Cube
   m_EditorClassIdentifier: 
   entityName: Mineral Cube
-  entitySprite: {fileID: 21300000, guid: 7c04749b0caf101498e3ff9e2442077b, type: 3}
+  entitySprite: {fileID: 21300000, guid: cfa44029a78aa58469930e4cdf905f11, type: 3}
   introduction:
   - ...
   actionSpeakFeedback:
