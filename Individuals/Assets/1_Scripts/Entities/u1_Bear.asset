@@ -32,7 +32,7 @@ MonoBehaviour:
   entityFontSize: 270
   entityTextSpeed: 0.06
   speakSound: {fileID: 8300000, guid: 189f7ac90716d53478fcc5e1a7201e3d, type: 3}
-  soundFrequency: 11
+  soundFrequency: 20
   soundMinPitch: 1
   soundMaxPitch: 1
   __makesNoise: 1

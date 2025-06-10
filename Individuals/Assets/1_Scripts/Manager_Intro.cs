@@ -22,7 +22,8 @@ public class Manager_Intro : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip textSound1;
     [SerializeField] private AudioClip textSound2;
-    [SerializeField] [Range(1, 20)] private int audioFreq;
+    [SerializeField] [Range(1, 20)] private int audioFreq1;
+    [SerializeField] [Range(1, 20)] private int audioFreq2;
 
     [SerializeField] [TextArea(1, 10)] private string[] intro;
     
@@ -37,12 +38,12 @@ public class Manager_Intro : MonoBehaviour
         introText1.text = "";
 
         panel1.SetActive(true);        
-        StartCoroutine(TypeText(introText1, intro[0], textSound1));
+        StartCoroutine(TypeText(introText1, intro[0], textSound1, audioFreq1));
         _isSecondText = false;
     }
 
     ///Text typer
-    private IEnumerator TypeText(TextMeshProUGUI introText, string textString, AudioClip textSound)
+    private IEnumerator TypeText(TextMeshProUGUI introText, string textString, AudioClip textSound, int audioFreq)
     {
         introText.text = "";
         foreach (char letter in textString)
@@ -54,7 +55,7 @@ public class Manager_Intro : MonoBehaviour
             }
 
             introText.text += letter;
-            PlayDialogueSound(letter, textSound); 
+            PlayDialogueSound(letter, textSound, audioFreq); 
 
             yield return new WaitForSeconds(textSpeed);
         }
@@ -63,7 +64,7 @@ public class Manager_Intro : MonoBehaviour
         ShowButton();
     }
 
-    private void PlayDialogueSound(int letter, AudioClip textSound)
+    private void PlayDialogueSound(int letter, AudioClip textSound, int audioFreq)
     {
         if (letter % audioFreq == 0)
         {
@@ -93,7 +94,7 @@ public class Manager_Intro : MonoBehaviour
         button2.SetActive(false);
 
         panel2.SetActive(true);        
-        StartCoroutine(TypeText(introText2, intro[1], textSound2));
+        StartCoroutine(TypeText(introText2, intro[1], textSound2, audioFreq2));
         _isSecondText = true;
     }
 }
