@@ -31,13 +31,13 @@ MonoBehaviour:
   killSound: {fileID: 8300000, guid: 47af649c200dd50448751e881bb0a8a1, type: 3}
   entityFontSize: 270
   entityTextSpeed: 0.06
-  speakSound: {fileID: 0}
-  soundFrequency: 0
-  soundMinPitch: 0
-  soundMaxPitch: 0
+  speakSound: {fileID: 8300000, guid: 189f7ac90716d53478fcc5e1a7201e3d, type: 3}
+  soundFrequency: 11
+  soundMinPitch: 1
+  soundMaxPitch: 1
   __makesNoise: 1
   __hasEyes: 1
-  __hasLegs: 1
+  __hasLegs: 0
   __wearsClothes: 0
   __looksNice: 0
   __feelsCool: 0
