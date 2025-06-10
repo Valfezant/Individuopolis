@@ -5,11 +5,11 @@ using UnityEngine;
 public class HammerAnimator : MonoBehaviour
 {
     [SerializeField] private Verdict verdict;
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
     public void StartHitAnimation()

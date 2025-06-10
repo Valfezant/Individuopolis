@@ -66,6 +66,7 @@ public class Verdict : MonoBehaviour
     {
         if (dayManager.currentEntity.killSound != null)
         {
+            audioSource.pitch = 1f;
             audioSource.PlayOneShot(dayManager.currentEntity.killSound, 1f);
         }
 

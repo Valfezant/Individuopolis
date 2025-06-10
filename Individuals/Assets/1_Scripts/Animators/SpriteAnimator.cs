@@ -7,11 +7,11 @@ public class SpriteAnimator : MonoBehaviour
     [SerializeField] private Verdict verdict;
     [SerializeField] private Displayer displayer;
 
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
     //Exit

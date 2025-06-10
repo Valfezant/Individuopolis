@@ -19,13 +19,15 @@ public class Manager_Evaluation : MonoBehaviour
     [SerializeField] private AudioClip textSound;
     [SerializeField] [Range(1, 20)] private int audioFreq;
 
-
     [Header("Stats")]
     [SerializeField] private Color positiveColor;
     [SerializeField] private Color negativeColor;
     [SerializeField] private AudioClip statsSound;
 
     [SerializeField] private List<int> statsList;
+
+    [SerializeField] private int[] minStatValue;
+    private int minStat;
     
     [SerializeField] private TextMeshProUGUI[] results;
     private int resultsIndex;
@@ -38,7 +40,7 @@ public class Manager_Evaluation : MonoBehaviour
         evalText.text = "";
         resutlsTitle.SetActive(false);
         quitButton.SetActive(false);
-        
+
         resultsIndex = 0;
         TakeStats();
 
@@ -47,14 +49,11 @@ public class Manager_Evaluation : MonoBehaviour
 
     private void TakeStats()
     {
-        //List<int> statsList = new List<int>();
-
         statsList.Add(evaluator.stat_makesNoise);
         statsList.Add(evaluator.stat_hasEyes);
         statsList.Add(evaluator.stat_hasLegs);
         statsList.Add(evaluator.stat_wearsClothes);
         statsList.Add(evaluator.stat_looksNice);
-        //statsList.Add(evaluator.stat_isSmall);
         statsList.Add(evaluator.stat_feelsCool);
         statsList.Add(evaluator.stat_canBeEaten);
     }
@@ -105,47 +104,44 @@ public class Manager_Evaluation : MonoBehaviour
     {
         foreach (TextMeshProUGUI result in results)
         {
-            DisplayResults(results[resultsIndex], statsList[resultsIndex]);
+            DisplayResults(results[resultsIndex], statsList[resultsIndex], minStatValue[resultsIndex]);
+            audioSource.pitch = 1f;
             audioSource.PlayOneShot(textSound);
             resultsIndex ++;
         }
-
         
         yield return new WaitForSeconds(1.5f);
         quitButton.SetActive(true);
     }
 
-
-
-    public void DisplayResults(TextMeshProUGUI resultText, int stat)
+    public void DisplayResults(TextMeshProUGUI resultText, int stat, int minStat)
     {
         string text = resultText.text;
         string[] subs = text.Split(" / ");
 
-        if (stat > 6)
-        {
-            subs[0] = "<color=#DDB72F>" + subs[0] + "</color>";
-            subs[1] = "<color=#5C5641>" + subs[1] + "</color>";
-            resultText.text = subs[0] + " / " + subs[1];
-        }
-        else
+        if (PlayerPrefs.GetInt("TotalHarvest") >= 15 || PlayerPrefs.GetInt("TotalHarvest") <= 0)
         {
             subs[1] = "<color=#DDB72F>" + subs[1] + "</color>";
             subs[0] = "<color=#5C5641>" + subs[0] + "</color>";
             resultText.text = subs[0] + " / " + subs[1];
         }
+        else 
+        {
+            if (stat >= minStat)
+            {
+                subs[0] = "<color=#DDB72F>" + subs[0] + "</color>";
+                subs[1] = "<color=#5C5641>" + subs[1] + "</color>";
+                resultText.text = subs[0] + " / " + subs[1];
+            }
+            else
+            {
+                subs[1] = "<color=#DDB72F>" + subs[1] + "</color>";
+                subs[0] = "<color=#5C5641>" + subs[0] + "</color>";
+                resultText.text = subs[0] + " / " + subs[1];
+            }
+        }
 
         var textObject = resultText.gameObject;
         textObject.SetActive(true);
-    }
-
-
-    void Update()
-    {
-        /*if(Input.GetKeyDown(KeyCode.A))
-        {
-            DisplayResults(resultText, evaluator.stat_makesNoise);
-            Debug.Log("A");
-        }*/
     }
 }

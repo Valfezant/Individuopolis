@@ -1152,7 +1152,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: End.
+  m_text: Evaluation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64bb0ed7903a42e49925989dbf1b056c, type: 2}
   m_sharedMaterial: {fileID: -3820589206460380644, guid: 64bb0ed7903a42e49925989dbf1b056c, type: 2}
@@ -1239,7 +1239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750555392}
   m_Layer: 5
-  m_Name: -Instructions
+  m_Name: -Ending text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1302,8 +1302,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -50, y: 50}
-  m_SizeDelta: {x: 790, y: 345}
+  m_AnchoredPosition: {x: -70, y: 70}
+  m_SizeDelta: {x: 1105, y: 345}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1953547184
 MonoBehaviour:

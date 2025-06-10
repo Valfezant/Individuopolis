@@ -18,6 +18,7 @@ public class Evaluator : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+        PlayerPrefs.SetInt("TotalHarvest", 0);
         
         stat_makesNoise = 0;
         stat_hasEyes = 0;

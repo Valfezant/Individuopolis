@@ -48,6 +48,11 @@ public class Manager_Day : MonoBehaviour
     [SerializeField] private bool _isLastDay;
 
     
+    void Awake()
+    {
+        onNextInQueue = null;
+    }
+    
     void Start()
     {
         _isDayOver = false;
@@ -118,14 +123,14 @@ public class Manager_Day : MonoBehaviour
                 if (PlayerPrefs.GetInt("TotalHarvest") > 4)
                 {
                     //LAST DAY -- TOTAL POSITIVE
-                    string dayEndUpdated = dayEnd[1].Replace("harvestValue", harvestCounter.ToString());
+                    string dayEndUpdated = dayEnd[1].Replace("harvestValue", PlayerPrefs.GetInt("TotalHarvest").ToString());
                     StartCoroutine(TypeText(dayText, dayEndUpdated));
                     PlayerPrefs.SetInt("EndingInt", 1);
                 }
                 else if (PlayerPrefs.GetInt("TotalHarvest") <= 4)
                 {
                     //LAST DAY -- TOTAL NEGATIVE
-                    string dayEndUpdated = dayEnd[0].Replace("harvestValue", harvestCounter.ToString());
+                    string dayEndUpdated = dayEnd[0].Replace("harvestValue", PlayerPrefs.GetInt("TotalHarvest").ToString());
                     StartCoroutine(TypeText(dayText, dayEndUpdated));
                     PlayerPrefs.SetInt("EndingInt", 0);
                 }
@@ -165,13 +170,13 @@ public class Manager_Day : MonoBehaviour
 
     public void NextEntityInQueue()
     {
-        Debug.Log(entityQueueIndex);
+        //Debug.Log(entityQueueIndex);
         
         if (entityQueueIndex < entityQueue.Length)
         {
             currentEntity = entityQueue[entityQueueIndex];
             entityQueueIndex ++;
-            Debug.Log(entityQueueIndex + " " + currentEntity.entityName);
+            //Debug.Log(entityQueueIndex + " " + currentEntity.entityName);
 
             if (onNextInQueue != null)
             {
@@ -180,15 +185,19 @@ public class Manager_Day : MonoBehaviour
         }
         else
         {
-            Debug.Log("Queue over");
-            Invoke("EndDay", 1.5f);
+            //Debug.Log("Queue over");
+            //Invoke("EndDay", 1f);
+            EndDay();
         }
     }
 
     private void EndDay()
     {
         _isDayOver = true;
-        PlayerPrefs.SetInt("TotalHarvest", harvestCounter);
+
+        var totalHarvest = PlayerPrefs.GetInt("TotalHarvest") + harvestCounter;
+        
+        PlayerPrefs.SetInt("TotalHarvest", totalHarvest);
         Debug.Log("Total Harvest= " + PlayerPrefs.GetInt("TotalHarvest"));
 
         hudPanel.SetActive(false);

@@ -20,7 +20,8 @@ public class Manager_Intro : MonoBehaviour
     [Header("Text Manager")]
     [SerializeField] private float textSpeed;
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip textSound;
+    [SerializeField] private AudioClip textSound1;
+    [SerializeField] private AudioClip textSound2;
     [SerializeField] [Range(1, 20)] private int audioFreq;
 
     [SerializeField] [TextArea(1, 10)] private string[] intro;
@@ -36,12 +37,12 @@ public class Manager_Intro : MonoBehaviour
         introText1.text = "";
 
         panel1.SetActive(true);        
-        StartCoroutine(TypeText(introText1, intro[0]));
+        StartCoroutine(TypeText(introText1, intro[0], textSound1));
         _isSecondText = false;
     }
 
     ///Text typer
-    private IEnumerator TypeText(TextMeshProUGUI introText, string textString)
+    private IEnumerator TypeText(TextMeshProUGUI introText, string textString, AudioClip textSound)
     {
         introText.text = "";
         foreach (char letter in textString)
@@ -53,11 +54,7 @@ public class Manager_Intro : MonoBehaviour
             }
 
             introText.text += letter;
-
-            if (_isSecondText)
-            {
-                PlayDialogueSound(letter); 
-            }
+            PlayDialogueSound(letter, textSound); 
 
             yield return new WaitForSeconds(textSpeed);
         }
@@ -66,7 +63,7 @@ public class Manager_Intro : MonoBehaviour
         ShowButton();
     }
 
-    private void PlayDialogueSound(int letter)
+    private void PlayDialogueSound(int letter, AudioClip textSound)
     {
         if (letter % audioFreq == 0)
         {
@@ -96,7 +93,7 @@ public class Manager_Intro : MonoBehaviour
         button2.SetActive(false);
 
         panel2.SetActive(true);        
-        StartCoroutine(TypeText(introText2, intro[1]));
+        StartCoroutine(TypeText(introText2, intro[1], textSound2));
         _isSecondText = true;
     }
 }

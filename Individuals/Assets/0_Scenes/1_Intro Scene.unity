@@ -783,8 +783,9 @@ MonoBehaviour:
   button2: {fileID: 1953547182}
   textSpeed: 0.02
   audioSource: {fileID: 941963277}
-  textSound: {fileID: 8300000, guid: 6ce102b8b85bceb4698bc6f9e8752767, type: 3}
-  audioFreq: 2
+  textSound1: {fileID: 8300000, guid: b5c817ce931228f4cb80c37e01eda605, type: 3}
+  textSound2: {fileID: 8300000, guid: 6ce102b8b85bceb4698bc6f9e8752767, type: 3}
+  audioFreq: 3
   intro:
   - "It has been centuries since the barriers between the species fell. \r\nIt has
     been decades since the fall of most urban centers, a consequence of the resources

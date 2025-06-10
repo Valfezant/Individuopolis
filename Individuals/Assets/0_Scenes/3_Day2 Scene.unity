@@ -944,6 +944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verdict: {fileID: 736754808}
+  animator: {fileID: 392462993}
 --- !u!1 &406566204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,6 +1624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   verdict: {fileID: 736754808}
   displayer: {fileID: 736754807}
+  animator: {fileID: 709195121}
 --- !u!1 &736754803
 GameObject:
   m_ObjectHideFlags: 0
