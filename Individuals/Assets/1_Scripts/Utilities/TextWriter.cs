@@ -19,6 +19,12 @@ public class TextWriter : MonoBehaviour
         {
             foreach (char letter in textString)
             {
+                if (Input.GetMouseButton(0))
+                {
+                    textArea.text = textString;
+                    break;
+                }
+                
                 if (textSound != null)
                 {
                     currentChar ++;
