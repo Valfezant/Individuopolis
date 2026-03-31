@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: u6_Jellyfish
+  m_EditorClassIdentifier: 
+  entityName: 
+  entitySprite: {fileID: 21300000, guid: fa5dfd096c6e61742a7b552d75de9656, type: 3}
+  introduction:
+  - "Yes\u2026 I must pass through here\u2026."
+  actionSpeakFeedback:
+  - "I am to join my twin sisters\u2026 we are to meet here\u2026 the Tide has guided
+    me\u2026\r"
+  - "For years we have been separated\u2026 but now we must\u2026"
+  - "Must rejoin the familiar flesh\u2026 our bodies were once one and the same\u2026"
+  - "And still they are just like me\u2026"
+  - "So many of us\u2026 the Tide wants us all here\u2026"
+  - "Just like me\u2026"
+  - "...I must\u2026"
+  - "I must\u2026"
+  actionPokeFeedback:
+  - A bizarre gelatinous mass floats in mid-air, drifting slightly with the slow,
+    rhythmic motion of its lower ring. Ribbon-like tendrils spread out from the main
+    body, dragged this way and that by its idle movement. I touch them, and pain
+    radiates from my finger immediately while it merely pulls backwards in response.
+  sparedDialogue:
+  - "I go forth\u2026"
+  killSound: {fileID: 0}
+  entityFontSize: 0
+  entityTextSpeed: 0
+  speakSound: {fileID: 0}
+  soundFrequency: 0
+  soundMinPitch: 0
+  soundMaxPitch: 0
+  __makesNoise: 0
+  __hasEyes: 0
+  __hasLegs: 0
+  __wearsClothes: 0
+  __looksNice: 0
+  __feelsCool: 0
+  __canBeEaten: 0

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: u8_Brain
+  m_EditorClassIdentifier: 
+  entityName: 
+  entitySprite: {fileID: 21300000, guid: fa5dfd096c6e61742a7b552d75de9656, type: 3}
+  introduction:
+  - "Noted. Noted. Pending analysis\u2026 noted."
+  actionSpeakFeedback:
+  - Waste not my time, creature! There is much to acquire just beyond those doors.
+  - I already know everything there is to know about the outside. Now let me through
+    at once.
+  - "...Impudent little doorman\u2026 noted."
+  - Out there is destruction. And boredom. Everything interesting is long gone, and
+    long known. But I see that in this place lies much to be studied. Merely waiting
+    for a mind as immense as mine to graciously lend itself to it.
+  - "I have long surpassed my ancestors\u2019 need for care and fellowship. I am
+    the last of my kind, but it does not matter. They worked themselves to death
+    providing for my existence, and they never even realised that I had no real use
+    for them."
+  - A being such as myself has no time for merriment or passion. Only fact is worth
+    pursuing. Fact is the basis of existence. Everything else is trivial.
+  - "Analysis update: remarkably insistent, obtuse, impudent little doorman\u2026"
+  - An intelligence of my capacity is wasted out here. Not like simple creatures
+    like you would understand.
+  actionPokeFeedback:
+  - "It\u2019s enormous. I question how it could\u2019ve even gotten here \u2013
+    its body seems too fragile for the bloated protuberance it bears, swaying with
+    every slow step. I can\u2019t recognise eyes or ears, but it seems to perceive
+    me clearly. I hear its words right inside my head. It\u2019s too slow to move
+    away when I touch it, so it screams another soundless complaint. Its surface
+    is spongy and warm."
+  sparedDialogue:
+  - "Issue resolved, archived. Beginning new inquiry. Prepare to assess\u2026\r\\"
+  killSound: {fileID: 0}
+  entityFontSize: 0
+  entityTextSpeed: 0
+  speakSound: {fileID: 0}
+  soundFrequency: 0
+  soundMinPitch: 0
+  soundMaxPitch: 0
+  __makesNoise: 0
+  __hasEyes: 0
+  __hasLegs: 0
+  __wearsClothes: 0
+  __looksNice: 0
+  __feelsCool: 0
+  __canBeEaten: 0

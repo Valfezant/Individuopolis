@@ -26,7 +26,7 @@ MonoBehaviour:
   actionPokeFeedback:
   - "Its big eyes shoot up towards me as I touch it, but it seems too intimidated
     to pull away. It remains silent, though trembling slightly. It\u2019s covered
-    in pillowy yet coarse fur - wool."
+    in pillowy yet coarse fur \u2013 wool."
   sparedDialogue:
   - ...
   killSound: {fileID: 8300000, guid: 646c9d69231e6a44abcc4f59180c0586, type: 3}

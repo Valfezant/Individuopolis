@@ -23,7 +23,7 @@ MonoBehaviour:
   - I am at your service.
   - How may I assist you?
   actionPokeFeedback:
-  - "I touch it with the tip of my finger, as lightly as I can manage - it appears
+  - "I touch it with the tip of my finger, as lightly as I can manage \u2013 it appears
     to be extremely fragile. It\u2019s probably made of some kind of lightweight
     metal. It regards me with beady eyes as it repeats its questions."
   sparedDialogue:

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: u9_Hivemind
+  m_EditorClassIdentifier: 
+  entityName: 
+  entitySprite: {fileID: 21300000, guid: fa5dfd096c6e61742a7b552d75de9656, type: 3}
+  introduction:
+  - Finally, intelligent life.
+  actionSpeakFeedback:
+  - "Though it seems your awareness might still be somewhat limited\u2026"
+  - We are here to enter the haven of individuals, what else?
+  - We are numerous, but require little sustenance. We are sure the city can provide
+    for us adequately.
+  - "The Hive can finally thrive, now that we no longer have to delegate so many
+    units to protection, air filtering, nutrient extraction\u2026"
+  - So many of us were sacrificed just to get here. So many resources were consumed
+    in producing their replacements. But at last our unit replacement rate shall
+    reach acceptable levels.
+  - "Can you believe the amount of junk floating in the air outside your settlement?
+    Units accumulated so much filth that they couldn\u2019t even be broken down and
+    repurposed."
+  - Such a waste of perfectly good energy, and in such trying times, too.
+  - We await the stabilisation of our numbers eagerly.
+  - "It\u2019s suspended a meter or so off the ground. I can see right through it,
+    but it still casts a shadow. In the overhead lighting, I think I see a pattern
+    on its surface. When I reach out to try and touch it, tiny particles sprint away
+    from my hand, only to return to their original place as soon as I pull back.
+    I try again, but there appears to be no way for me to make contact with it."
+  actionPokeFeedback:
+  - We can feel the clean air already.
+  sparedDialogue: []
+  killSound: {fileID: 0}
+  entityFontSize: 0
+  entityTextSpeed: 0
+  speakSound: {fileID: 0}
+  soundFrequency: 0
+  soundMinPitch: 0
+  soundMaxPitch: 0
+  __makesNoise: 0
+  __hasEyes: 0
+  __hasLegs: 0
+  __wearsClothes: 0
+  __looksNice: 0
+  __feelsCool: 0
+  __canBeEaten: 0

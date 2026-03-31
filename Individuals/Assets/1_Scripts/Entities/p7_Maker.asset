@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: p7_Maker
+  m_EditorClassIdentifier: 
+  entityName: 
+  entitySprite: {fileID: 0}
+  introduction:
+  - "Oh, it\u2019s here, it\u2019s right here!\r"
+  actionSpeakFeedback:
+  - "Myself? I am a Maker, of course. Isn\u2019t it obvious? To create things is
+    my calling. I can bend all materials to my will.\r"
+  - 'But herein lies the problem, you see, for I have created something that must,
+    I say, must be destroyed! '
+  - "It\u2019s\u2026 it\u2019s too horrible to describe. A monster. A devil. A\u2026"
+  - "A mistake\u2026"
+  - "It grew beyond its bounds, and it forgot its master. And I fear it! Soon it
+    may turn violent! Develop a thirst for destruction! For it cannot create\u2026"
+  - "And it follows! It followed me even here. I know it\u2019s right behind me,
+    stalking me, waiting for the slightest mistake\u2026"
+  - So please! You who hold the power, clean up this sin of mine! Erase my grave
+    mistake.
+  - "I cannot stand to look at it\u2026 such a vile thing deserves not to be seen\u2026"
+  actionPokeFeedback:
+  - '[PENDING CREATURE DESIGN]'
+  sparedDialogue:
+  - "Please, may it not follow me further\u2026"
+  killSound: {fileID: 0}
+  entityFontSize: 0
+  entityTextSpeed: 0
+  speakSound: {fileID: 0}
+  soundFrequency: 0
+  soundMinPitch: 0
+  soundMaxPitch: 0
+  __makesNoise: 0
+  __hasEyes: 0
+  __hasLegs: 0
+  __wearsClothes: 0
+  __looksNice: 0
+  __feelsCool: 0
+  __canBeEaten: 0

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
+  m_Name: u4_Mech
+  m_EditorClassIdentifier: 
+  entityName: 
+  entitySprite: {fileID: 21300000, guid: fa5dfd096c6e61742a7b552d75de9656, type: 3}
+  introduction:
+  - Present as required.
+  actionSpeakFeedback:
+  - "I am\u2026 an autonomous being.\r"
+  - "Created\u2026 created by\u2026 researchers."
+  - "My body is\u2026 unstable\u2026"
+  - "That is why I am fitted with these\u2026 supports."
+  - "They gave them to me\u2026"
+  - They will not give out. Not now.
+  - "And if they do\u2026 there is a procedure to\u2026 restore me\u2026"
+  - Plenty of failures on the road to success.
+  - "I am always there\u2026 to try again\u2026"
+  actionPokeFeedback:
+  - This one is a confusing jumble of meat and metal, layers of different materials
+    too overlapped to tell which part really came first. Tubes are going in and out
+    of its form, and some connect straight into a small, plastic box. There is a
+    screen showing numbers and graphs. It beeps rhythmically.
+  sparedDialogue:
+  - "Another success\u2026 they will be\u2026 pleased."
+  killSound: {fileID: 0}
+  entityFontSize: 0
+  entityTextSpeed: 0
+  speakSound: {fileID: 0}
+  soundFrequency: 0
+  soundMinPitch: 0
+  soundMaxPitch: 0
+  __makesNoise: 0
+  __hasEyes: 0
+  __hasLegs: 0
+  __wearsClothes: 0
+  __looksNice: 0
+  __feelsCool: 0
+  __canBeEaten: 0

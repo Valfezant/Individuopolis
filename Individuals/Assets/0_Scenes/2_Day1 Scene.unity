@@ -1670,6 +1670,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 14f1e42c3410d5742a766d9cba6e1a0d, type: 2}
   - {fileID: 11400000, guid: 2cf873c3811dd8047b133f629fa32b30, type: 2}
   - {fileID: 11400000, guid: f058f72f7ad26d747b2ebd6777000aed, type: 2}
+  - {fileID: 11400000, guid: 38d0c76afff10244c83cc4463ba15c0c, type: 2}
   currentEntity: {fileID: 0}
   introPanel: {fileID: 6756471219616966334}
   dayTitleText: {fileID: 5715254019071611163}

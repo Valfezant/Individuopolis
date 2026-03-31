@@ -1665,11 +1665,13 @@ MonoBehaviour:
   harvestSliderText: {fileID: 1544673943}
   harvestCounter: 0
   entityQueue:
-  - {fileID: 11400000, guid: 660ae7e6c8d406f4a8bbd9726bd885da, type: 2}
-  - {fileID: 11400000, guid: 5f57890388792254fb5c69a3473920a5, type: 2}
-  - {fileID: 11400000, guid: d4b3f5882c6ea5446932e102be30a940, type: 2}
   - {fileID: 11400000, guid: 3050f6903043d2849a11e7a49553e724, type: 2}
-  - {fileID: 11400000, guid: 1ec9c3a3142aaf74bb77ff8d46b3c484, type: 2}
+  - {fileID: 11400000, guid: 5b3ac073afbbe6a4fa565367d4cd6ae1, type: 2}
+  - {fileID: 11400000, guid: 660ae7e6c8d406f4a8bbd9726bd885da, type: 2}
+  - {fileID: 11400000, guid: 17eab17f5bfeaa14db466e1e9cb9937d, type: 2}
+  - {fileID: 11400000, guid: 5f57890388792254fb5c69a3473920a5, type: 2}
+  - {fileID: 11400000, guid: 6d16ce24a08bd00469b16e72583cdc39, type: 2}
+  - {fileID: 11400000, guid: 7fe19d96cdd057e46887854e6ac406ca, type: 2}
   currentEntity: {fileID: 0}
   introPanel: {fileID: 6756471219616966334}
   dayTitleText: {fileID: 5715254019071611163}
@@ -1694,7 +1696,7 @@ MonoBehaviour:
     unworthy objects from entering our city.\r\n\r\r\n\rThrough your exemplary performance
     you have proved yourself a faithful, respectable protector of Individuopolis.\r\n\r\nPlease
     proceed through here.\r\r"
-  _isLastDay: 1
+  _isLastDay: 0
 --- !u!4 &736754805
 Transform:
   m_ObjectHideFlags: 0
@@ -4104,7 +4106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1607607cc0b5c841b206c964d5ddaa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 5_Ending Scene
+  sceneToLoad: 5_Day4 Scene
 --- !u!222 &759699515148922320
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ MonoBehaviour:
   actionSpeakFeedback:
   - ...
   actionPokeFeedback:
-  - "The surface is rough - I\u2019m guessing some kind of sedimentary formation.
+  - "The surface is rough \u2013 I\u2019m guessing some kind of sedimentary formation.
     It isn\u2019t heavy at all."
   sparedDialogue:
   - ...thanks...

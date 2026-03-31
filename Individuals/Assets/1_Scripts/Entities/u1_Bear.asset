@@ -19,13 +19,12 @@ MonoBehaviour:
   actionSpeakFeedback:
   - ...
   - ...
-  - '*Low growl*'
+  - '*Growl*'
   actionPokeFeedback:
   - "I couldn\u2019t possibly dare to touch this one. It's a terrible thing, big
-    and heavy and covered in thick fur. It stands tall on its hind limbs, studying
-    me with deep, dark, inscrutable eyes. I can\u2019t even begin to understand what
-    thoughts might be lying beyond them. I don\u2019t think I really am \u2018the
-    inspector\u201D in this interaction.\r"
+    and heavy and covered in thick fur. It stands tall, studying me with deep, dark
+    eyes. I can\u2019t even begin to understand what thoughts might be lying beyond
+    them. I don\u2019t think I really am \u2018the inspector' in this interaction.\r"
   sparedDialogue:
   - ...
   killSound: {fileID: 8300000, guid: 47af649c200dd50448751e881bb0a8a1, type: 3}

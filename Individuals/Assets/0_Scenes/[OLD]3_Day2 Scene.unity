@@ -1665,13 +1665,11 @@ MonoBehaviour:
   harvestSliderText: {fileID: 1544673943}
   harvestCounter: 0
   entityQueue:
-  - {fileID: 11400000, guid: dd1827aa508b66347a3273c177b3ce42, type: 2}
-  - {fileID: 11400000, guid: 1503bc74923dcf349a01a0086f6bc94e, type: 2}
   - {fileID: 11400000, guid: 0050934e63a68b544ae9cc550ff605f3, type: 2}
   - {fileID: 11400000, guid: 494491b60b4ba0147a3ae3e6e7965c86, type: 2}
-  - {fileID: 11400000, guid: edc81b2c27841dc408bf2cd835456056, type: 2}
-  - {fileID: 11400000, guid: 1ec9c3a3142aaf74bb77ff8d46b3c484, type: 2}
-  - {fileID: 11400000, guid: d4b3f5882c6ea5446932e102be30a940, type: 2}
+  - {fileID: 11400000, guid: dd1827aa508b66347a3273c177b3ce42, type: 2}
+  - {fileID: 11400000, guid: 1503bc74923dcf349a01a0086f6bc94e, type: 2}
+  - {fileID: 11400000, guid: 17eab17f5bfeaa14db466e1e9cb9937d, type: 2}
   currentEntity: {fileID: 0}
   introPanel: {fileID: 6756471219616966334}
   dayTitleText: {fileID: 5715254019071611163}

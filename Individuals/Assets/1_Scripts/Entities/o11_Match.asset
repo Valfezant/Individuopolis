@@ -10,32 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeab04f4db333844bbc5e8fbf7c83ae0, type: 3}
-  m_Name: u2_Chicken
+  m_Name: o11_Match
   m_EditorClassIdentifier: 
-  entityName: Broiler Chicken
-  entitySprite: {fileID: 21300000, guid: b3812e6a09a83f5439ceafae330667e2, type: 3}
+  entityName: 
+  entitySprite: {fileID: 21300000, guid: fa5dfd096c6e61742a7b552d75de9656, type: 3}
   introduction:
   - ...
   actionSpeakFeedback:
   - ...
-  - ...
-  - ...
   actionPokeFeedback:
-  - Impossibly soft feathers cushioning plump meat. Its eyes now slowly drift towards
-    me, but only slightly. For all I know, it was just a coincidence.
+  - "It appears to be emitting some kind of light, if weakly. The body itself is
+    very thin and crooked. I feel warmth as I move my finger towards it, then a sharp
+    pain. The energy it\u2019s emitting burns, but it seems to keep getting weaker."
   sparedDialogue:
-  - '*Cluck*'
-  killSound: {fileID: 8300000, guid: 82077f6fdd9fe1349b428764863c23f3, type: 3}
-  entityFontSize: 165
-  entityTextSpeed: 0.02
+  - ...
+  killSound: {fileID: 0}
+  entityFontSize: 0
+  entityTextSpeed: 0
   speakSound: {fileID: 0}
   soundFrequency: 0
   soundMinPitch: 0
   soundMaxPitch: 0
   __makesNoise: 0
-  __hasEyes: 1
-  __hasLegs: 1
+  __hasEyes: 0
+  __hasLegs: 0
   __wearsClothes: 0
   __looksNice: 0
   __feelsCool: 0
-  __canBeEaten: 1
+  __canBeEaten: 0
