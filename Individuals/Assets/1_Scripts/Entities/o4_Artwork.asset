@@ -34,8 +34,17 @@ MonoBehaviour:
   soundMaxPitch: 0
   __makesNoise: 0
   __hasEyes: 0
+  __canSee: 0
   __hasLegs: 1
+  __twoLegs: 0
   __wearsClothes: 1
   __looksNice: 1
-  __feelsCool: 0
-  __canBeEaten: 0
+  __feelsCold: 1
+  __isEdible: 0
+  __isBrown: 1
+  __isBlue: 0
+  __isSmooth: 0
+  __hasHair: 0
+  __fourLimbs: 0
+  __usesElectricity: 0
+  __hasUse: 0

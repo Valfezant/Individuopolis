@@ -41,10 +41,19 @@ MonoBehaviour:
   soundFrequency: 0
   soundMinPitch: 0
   soundMaxPitch: 0
-  __makesNoise: 0
-  __hasEyes: 0
+  __makesNoise: 1
+  __hasEyes: 1
+  __canSee: 0
   __hasLegs: 0
+  __twoLegs: 1
   __wearsClothes: 0
   __looksNice: 0
-  __feelsCool: 0
-  __canBeEaten: 0
+  __feelsCold: 1
+  __isEdible: 0
+  __isBrown: 1
+  __isBlue: 0
+  __isSmooth: 0
+  __hasHair: 0
+  __fourLimbs: 0
+  __usesElectricity: 0
+  __hasUse: 1
