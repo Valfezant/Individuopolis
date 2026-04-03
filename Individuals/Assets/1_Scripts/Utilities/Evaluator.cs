@@ -56,12 +56,7 @@ public class Evaluator : MonoBehaviour
             stat_looksNice ++;
         }
 
-        /*if (currentEntity.__isSmall)
-        {
-            stat_isSmall ++;
-        }*/
-
-        if (currentEntity.__feelsCool)
+        /*if (currentEntity.__feelsCool)
         {
             stat_feelsCool ++;
         }
@@ -69,6 +64,6 @@ public class Evaluator : MonoBehaviour
         if (currentEntity.__canBeEaten)
         {
             stat_canBeEaten ++;
-        }
+        }*/
     }
 }

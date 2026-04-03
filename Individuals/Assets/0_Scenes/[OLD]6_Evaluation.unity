@@ -547,7 +547,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 355236496}
-  - component: {fileID: 355236500}
   - component: {fileID: 355236499}
   - component: {fileID: 355236497}
   - component: {fileID: 355236498}
@@ -689,7 +688,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355236494}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a779275ccceb704f86a9b57594a03a3, type: 3}
   m_Name: 
@@ -718,59 +717,6 @@ MonoBehaviour:
   - {fileID: 1450950376}
   - {fileID: 841333337}
   - {fileID: 1042825541}
---- !u!114 &355236500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355236494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c48e57570c97d6045ad5800099adc1d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introText: {fileID: 882372374}
-  evalIntro: "Thanks to your invaluable research, we were able to compile a checklist
-    which will facilitate the examination of entisons immensely. \nHenceforth, admission
-    to Individuopolis will be determined on the basis of the following guidelines:"
-  resutlsTitleText: {fileID: 490320596}
-  quitButton: {fileID: 1953547182}
-  resultsText: {fileID: 670695596}
-  evalResults:
-  - May be polite mutes.
-  - Must be capable of emitting noise.
-  - Must be incapable of disturbing the peace.
-  - Must have functioning sensory organs.
-  - Must have visible eyes.
-  - Should be incapable of rude staring.
-  - Must be bipedal.
-  - May walk on distinct limbs of any kind.
-  - Should slide across the floor.
-  - Can present themselves honestly.
-  - Must distinguish themselves through their clothing.
-  - Should renounce pointless embellishments.
-  - May be repulsive.
-  - Must look appealing.
-  - Must be horrid and grotesque.
-  - Must feel cool to the touch.
-  - Must radiate warmth.
-  - May be incapable of providing food in times of need.
-  - Must be edible.
-  - Must be composed of sturdy material.
-  - Must not be blue in colour.
-  - Must be of a shade of brown.
-  - Must be hairless.
-  - Must have a smooth surface.
-  - Must have a coarse texture.
-  - Should not have four limbs.
-  - Must rely on electricity.
-  - Must be of use to other creatures.
-  audioSource: {fileID: 355236498}
-  textSpeed: 0.03
-  textSound: {fileID: 8300000, guid: 6ce102b8b85bceb4698bc6f9e8752767, type: 3}
-  audioFreq: 2
-  statsSound: {fileID: 8300000, guid: 71a667f287fa5384093ec3602ea13059, type: 3}
 --- !u!1 &406335763
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,9 +879,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1721151411}
   - {fileID: 490320597}
-  - {fileID: 670695595}
   - {fileID: 331292797}
   - {fileID: 406335764}
   - {fileID: 122733741}
@@ -982,10 +926,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 483225724}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 217}
-  m_SizeDelta: {x: 0, y: 95}
+  m_SizeDelta: {x: 520, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &490320598
 MonoBehaviour:
@@ -1083,156 +1027,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490320596}
-  m_CullTransparentMesh: 1
---- !u!1 &670695594
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 670695595}
-  - component: {fileID: 670695597}
-  - component: {fileID: 670695596}
-  m_Layer: 5
-  m_Name: Results_Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &670695595
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670695594}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 483225724}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -60.5}
-  m_SizeDelta: {x: 0, y: 447.468}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &670695596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670695594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Must be capable of speech.
-
-    May be polite mutes.
-
-    Must be capable
-    of speech.
-
-    May be polite mutes.
-
-    Must be capable of speech.
-
-    May
-    be polite mutes.
-
-    Must be capable of speech.
-
-    May be polite mutes.'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f5107da024c9ee4f9f0ec17251f62f6, type: 2}
-  m_sharedMaterial: {fileID: 4055559345370820827, guid: 4f5107da024c9ee4f9f0ec17251f62f6, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4287812066
-  m_fontColor: {r: 0.8862745, g: 0.81960785, b: 0.57254905, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 25
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &670695597
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670695594}
   m_CullTransparentMesh: 1
 --- !u!1 &841333335
 GameObject:
@@ -1866,74 +1660,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090865197}
   m_CullTransparentMesh: 1
---- !u!1 &1193249751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1193249753}
-  - component: {fileID: 1193249752}
-  m_Layer: 0
-  m_Name: test
-  m_TagString: Evaluator
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1193249752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193249751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6310e1ab3e120c442a0ea19dcb7bb947, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stat_noise_yes: 6
-  stat_noise_no: 2
-  stat_eyes_yes: 5
-  stat_eyes_no: 1
-  stat_canSee: 5
-  stat_legs_yes: 5
-  stat_legs_no: 4
-  stat_twoLegs: 6
-  stat_clothes_yes: 6
-  stat_clothes_no: 1
-  stat_looksNice_yes: 7
-  stat_looksNice_no: 1
-  stat_cold: 6
-  stat_warm: 8
-  stat_edible_yes: 9
-  stat_edible_no: 2
-  stat_brown: 5
-  stat_blue: 3
-  stat_smooth_yes: 5
-  stat_smooth_no: 5
-  stat_hair: 3
-  stat_fourLimbs: 4
-  stat_electric: 1
-  stat_useful: 5
---- !u!4 &1193249753
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193249751}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 372.35086, y: 229.56317, z: 15.166321}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1450950374
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,81 +1793,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450950374}
-  m_CullTransparentMesh: 1
---- !u!1 &1721151410
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1721151411}
-  - component: {fileID: 1721151413}
-  - component: {fileID: 1721151412}
-  m_Layer: 5
-  m_Name: testImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1721151411
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721151410}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: -0.2, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 483225724}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.068, y: -29.423}
-  m_SizeDelta: {x: 1084.636, y: 3262.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1721151412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721151410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 697725771, guid: 6f61c5766acc74b46943742e5836b18e, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1721151413
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721151410}
   m_CullTransparentMesh: 1
 --- !u!1 &1750555391
 GameObject:
@@ -2558,4 +2209,3 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 2118493307}
   - {fileID: 342830617}
-  - {fileID: 1193249753}
