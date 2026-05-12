@@ -1684,8 +1684,8 @@ MonoBehaviour:
   dayTitle: Day 1 - Morning
   dayIntroduction:
   - "Good morning, Inspector.\r\n\r\nThe projected amount of objects attempting to
-    enter on this day is <color=red>between minEstimate and maxEstimate</color>.\r\n\r\nMake
-    sure to perform your duty accordingly, and you will be rewarded.\r"
+    enter on this day is between minEstimate and maxEstimate.\r\n\r\nMake sure to
+    perform your duty accordingly, and you will be rewarded.\r\r"
   dayTitleEnd: Day 1 - Evening
   dayEnd:
   - "Your performance report for the day indicates you prevented <color=red>harvestValue</color>
@@ -1699,6 +1699,12 @@ MonoBehaviour:
     an admirable performance is deserving of recognition. Your reward will be granted
     if you are capable of consistently proving your worth.\r"
   _isLastDay: 0
+  hColor1:
+    serializedVersion: 2
+    rgba: 4278190289
+  hColor2:
+    serializedVersion: 2
+    rgba: 4292731538
 --- !u!4 &736754805
 Transform:
   m_ObjectHideFlags: 0
@@ -3422,6 +3428,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1697788928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1697788930}
+  - component: {fileID: 1697788929}
+  m_Layer: 0
+  m_Name: test
+  m_TagString: Evaluator
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1697788929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697788928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71112ff7ae60ba49a8bfb41b764a61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stat_makesNoise: 0
+  stat_hasEyes: 0
+  stat_hasLegs: 0
+  stat_wearsClothes: 0
+  stat_looksNice: 0
+  stat_feelsCool: 0
+  stat_canBeEaten: 0
+--- !u!4 &1697788930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697788928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 349.87357, y: 259.86127, z: 12.08374}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1774346268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4194,15 +4251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '$Good morning, Inspector.
-
-
-    The projected amount of objects attempting
-    to enter this day is {estimatedObjectCount}.
-
-
-    Perform your duty accordingly,
-    and you will be rewarded.'
+  m_text: test
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f5107da024c9ee4f9f0ec17251f62f6, type: 2}
   m_sharedMaterial: {fileID: 4055559345370820827, guid: 4f5107da024c9ee4f9f0ec17251f62f6, type: 2}
@@ -4225,7 +4274,7 @@ MonoBehaviour:
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
   m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -4747,3 +4796,4 @@ SceneRoots:
   - {fileID: 1694623784}
   - {fileID: 709195120}
   - {fileID: 1774346268}
+  - {fileID: 1697788930}
